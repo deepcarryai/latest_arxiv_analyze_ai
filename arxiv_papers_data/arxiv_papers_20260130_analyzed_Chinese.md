@@ -1,0 +1,183 @@
+# 20260130
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - 通过工具集成强化学习扩展医疗推理验证 [PDF](https://arxiv.org/pdf/2601.20221), [HTML](https://arxiv.org/abs/2601.20221)
+### Authors
+Hang Zhang,Ruheng Wang,Yuelyu Ji,Mingu Kwak,Xizhi Wu,Chenyu Li,Li Zhang,Wenqi Shi,Yifan Peng,Yanshan Wang
+### Background
+大型语言模型在医疗推理基准测试中取得了优异的性能，但在临床环境中的应用需要严格的验证以确保事实准确性。现有方法中的奖励模型虽然具有可扩展性，但在推理追踪验证中存在两个局限：它们仅生成标量奖励值而不提供明确的解释，且依赖单一检索，无法在验证过程中进行适应性知识访问。
+### Innovation
+$?method$框架通过在评估过程中训练医学推理验证器逐步查询外部医学资料库来解决这些局限性。该方法结合了工具增强的验证和迭代强化学习范式，仅需踪迹级别的监督，并且包含一个动态调整训练数据分布的适应性课程机制。在四个医学推理基准测试中，$?method$显著超越现有方法，特别是在MedQA和MedXpertQA上的准确性分别提高了23.5%和32.0%，并且与以前的奖励模型基线相比，$?method$将采样预算需求降低了8倍。
+### Conclusion
+这些发现表明，基于动态检索证据进行验证提供了一条实现更可靠医学推理系统的合理的途径。
+## 2. `cs.AI` - Fuzzy Categorical Planning: 自带分级语义约束的自主目标满足 [PDF](https://arxiv.org/pdf/2601.20021), [HTML](https://arxiv.org/abs/2601.20021)
+### Authors
+Shuhui Qu
+### Background
+自然语言规划通常涉及模糊谓词（例如，合适的替换、足够稳定），这类谓词的满足程度是分级的。现有基于范畴论的规划者提供了组合结构和基于拉回的硬约束验证，但将适用性视为硬性处理，迫使阈值化操作会将有意义的区别模糊化，并且无法跟踪多步骤计划中的质量退化。
+### Innovation
+我们提出了一种模糊范畴论规划（FCP），它为每个动作分配一个在[0,1]之间的度量，通过Lukasiewicz t-规范合并计划质量，并通过拉回验证保留清晰的执行检查。FCP使用LLM和k样本中位数聚合来从语言中推断出分级适用性，并支持使用基于残差的后向要求进行中间相遇搜索。
+### Conclusion
+FCP在公共PDDL3偏好/过订阅基准测试和从RecipeNLG构建的RecipeNLG-Subs基准测试中优于仅使用LLM和ReAct风格的基本模型，同时在经典PDDL3规划者方面保持竞争力，提高了成功概率并减少了硬约束违反。
+## 3. `cs.AI` - 教LLM提问：基于范畴论的自我查询推理规划以处理不完全推理 [PDF](https://arxiv.org/pdf/2601.20014), [HTML](https://arxiv.org/abs/2601.20014)
+### Authors
+Shuhui Qu
+### Background
+在推理过程中，大型语言模型在部分可观测的情况下经常出现故障，尤其是在任务关键条件未在查询时明确指定的情况下，模型可能会捏造缺失的事实或生成违反硬约束的计划。目前的基线方法在WikiHow和RecipeNLG任务中无法有效处理这些不完全条件带来的问题。
+### Innovation
+本文提出了Self-Querying Bidirectional Categorical Planning (SQ-BCP)，这是一种明确表示任务关键条件状态（已满足/违反/未知）并利用（i）针对特定条件进行自我查询获取更多信息，以及（ii）通过额外动作构建桥梁假设以解决未知条件的方法。SQ-BCP采用了双向搜索，并以范畴验证器作为目标兼容性的证书，仅使用距离得分进行排序和剪枝。证明显示，在验证成功且硬约束通过确定性检查时，接受的计划能够与目标要求兼容；在有限扩展和有限解析深度下，SQ-BCP能够在存在可接受计划时找到一个。
+### Conclusion
+通过在WikiHow和RecipeNLG任务中验证与预存条件的SQ-BCP，相比基线方法，其资源违规率分别降低了45.0%和62.3%，同时保持了较好的参考质量。
+## 4. `cs.AI` - AMA: 跨多粒度协作的自适应记忆 [PDF](https://arxiv.org/pdf/2601.20352), [HTML](https://arxiv.org/abs/2601.20352)
+### Authors
+Weiquan Huang,Zixuan Wang,Hehai Lin,Sudong Wang,Bo Xu,Qian Li,Beier Zhu,Linyi Yang,Chengwei Qin
+### Background
+随着大型语言模型（LLM）代理的迅速发展，构建支持长期一致性和复杂推理的强大的记忆系统变得至关重要。尽管最近的研究重点已从简单的上下文扩展转向了专署记忆系统的开发，但现有的方法通常依赖于固定的记忆检索粒度、累积为主的记忆维护策略以及粗粒度的更新机制。这导致了回忆信息与特定任务需求之间的持续不匹配，并随着时间的推移积累了逻辑不一致的问题。
+### Innovation
+为了解决这些问题，本文提出了一种名为AMA的创新框架，即通过多智能体协作实现自适应记忆。AMA依赖于代表协调记忆管理的多粒度设计，与任务复杂性动态对齐检索粒度。具体来说，构造者和检索者共同实现多粒度记忆构建及动态查询路由。仲裁者验证检索内容的相关性和一致性，并在证据不足时触发迭代检索或在检测到逻辑冲突时调用刷新机制。刷新机制通过执行针对性更新或删除过时的条目来维护记忆的一致性。
+### Conclusion
+在具有挑战性的长上下文基准测试中的广泛实验表明，与最先进的基线相比，AMA在提高检索精度和长期记忆一致性方面表现出色，同时减少了约80%的标记消耗，这证明了其在维持检索精度和长期记忆一致性方面的有效性。
+## 5. `cs.AI` - 迈向智能城市公园发展监测：多模态信息融合与分析的LLM代理 [PDF](https://arxiv.org/pdf/2601.20206), [HTML](https://arxiv.org/abs/2601.20206)
+### Authors
+Zixuan Xiao,Chunguang Hu,Jun Ma
+### Background
+作为城市化进程的重要组成部分，新建成公园的发展监测对于评估城市规划效果和优化资源配置具有重要意义。然而，传统的基于遥感图像的变更检测方法在高级及智能分析方面具有明显局限，难以满足当前城市规划和管理的要求。面对城市公园发展监测中日益增长的复杂多模态数据分析需求，现有方法往往无法提供对不同应用场景的灵活分析能力。
+### Innovation
+本文提出了一种多模态LLM代理框架，旨在充分利用LLM的语义理解和推理能力，应对城市公园发展监测的挑战。该框架设计了一种通用的水平和垂直数据对齐机制，确保多模态数据的一致性和有效跟踪。同时，构建了一个特定工具包以缓解由于缺乏领域特定知识而导致的LLM幻觉问题。相比通用GPT-4o和其他代理，本方法能够实现稳健的多模态信息融合和分析，提供符合城市公园发展监测多样化和不断变化需求的可靠和可扩展解决方案。
+### Conclusion
+本文提出了一种多模态LLM代理框架，能够提供对复杂多模态数据分析的灵活性和针对性，克服了传统方法在高级及智能分析方面的局限，为城市公园发展监测提供了一种新的智能监测方法。
+## 6. `cs.AI` - Insight Agents: 一个基于LLM的多代理系统，用于数据洞察 [PDF](https://arxiv.org/pdf/2601.20048), [HTML](https://arxiv.org/abs/2601.20048)
+### Authors
+Jincheng Bai,Zhenyu Zhang,Jennifer Zhang,Zhihuai Zhu
+### Background
+如今，电子商务卖家面临着多方面挑战，包括难以发现和有效利用现有的程序和工具，以及难以理解和利用来自各种工具的丰富数据。为此，本文旨在开发一种名为Insight Agents (IA)的多代理数据洞察系统，通过自动信息检索为电子商务卖家提供个性化的数据和业务洞察。我们的假设是，IA将为卖家提供助力，从而降低其努力程度并加快卖家作出优质业务决策的速度，推动卖家的增量采用。
+### Innovation
+本文介绍了一种基于计划与执行范式的新型端到端代理系统，该系统以全面覆盖、高准确性和低延迟为设计目标，构建了一个分层多代理结构，包括管理代理和两个工代理：数据展示和洞察生成，用于高效的信息检索和问题解决。管理代理的设计中，采用了一种简单的轻量级编码器-解码器模型与BERT基分类器相结合的ML解决方案，用于跨领域（OOD）检测及代理路由，优化了准确性和延迟。工代理中设计了基于API的数据模型策略规划，将查询分解成细粒度组件来生成更准确的响应，并动态注入领域知识以增强洞察生成。
+### Conclusion
+IA已在美国亚马逊卖家上线，根据人工评估的高准确率达到90%，P90延迟低于15秒。
+## 7. `cs.AI` - 自洽重询：统一多模态模型的自我进化的认知对准 [PDF](https://arxiv.org/pdf/2601.20305), [HTML](https://arxiv.org/abs/2601.20305)
+### Authors
+Zhenchen Tang,Songlin Yang,Zichuan Wang,Bo Peng,Yang Li,Beibei Dong,Jing Dong
+### Background
+统一多模态模型（UMMs）表现出强大的理解能力，但这种能力往往不能有效地指导生成过程。这一现象被作者定义为认知鸿沟：模型缺乏理解如何提升自身生成过程的能力。
+### Innovation
+提出了自洽重询（SEER，Self-Evolving Evaluator and Reprompter）机制，将模型的理解从被动编码过程转化为生成过程中显式的生成推理步骤。SEER框架通过引入两个阶段的内生循环，仅使用来自紧凑代理任务（视觉指令扩展）的300个样本，激活模型的内在评价能力，从而优化生成推理策略。
+### Conclusion
+实验表明，SEER在评估准确性、重询效率和生成质量方面均优于最先进的基线模型，同时没有牺牲通用多模态能力。
+## 8. `cs.AI` - 我本来应该表达不同的意图吗？基于LLM的自主控制中的因果生成 [PDF](https://arxiv.org/pdf/2601.20090), [HTML](https://arxiv.org/abs/2601.20090)
+### Authors
+Amirmohammad Farzaneh,Salvatore D'Oro,Osvaldo Simeone
+### Background
+大型语言模型（LLM）驱动的代理能够将用户的高层次意图转化为在环境中的计划和行动。然而，在观察到结果后，用户可能会问：如果我用不同的语言表达我的意图会怎样？该论文讨论了在基于LLM驱动的代理控制场景中实现反事实推理的方法，同时提供了形式化的可靠性保证。
+### Innovation
+本文提出了一种框架，通过将用户、LLM 基础代理和环境之间的闭环交互建模为结构因果模型（SCM），并在测试时利用概率还原生成多个候选反事实结果。通过离线校准阶段，提出的符合因果生成（CCG）方法确保反事实结果集以高概率包含真实反事实结果。
+### Conclusion
+CCG 方法在网络控制用例中的表现显著优于简单的重新执行基准方法。
+## 9. `cs.AI` - 神经AI及其未来 [PDF](https://arxiv.org/pdf/2601.19955), [HTML](https://arxiv.org/abs/2601.19955)
+### Authors
+Jean-Marc Fellous,Gert Cauwenberghs,Cornelia Fermüller,Yulia Sandamisrkaya,Terrence Sejnowski
+### Background
+近年来，神经科学和人工智能均取得了显著进展，但两者之间仅存在松散的联系。在此背景下，基于2025年8月举办的研讨会，我们识别出了神经科学与人工智能之间的当前和未来潜在协同领域。我们重点探讨了本体论、语言和交流、机器人学、人类和机器学习以及神经形态工程等子领域，总结了目前的研究进展，并提出了未来的新潜力路径。
+### Innovation
+我们倡导发展一种以神经科学为基础的人工智能——神经AI，这种人工智能有望极大地提高AI算法的范围和效率，同时改变我们对生物神经计算的理解方式。我们还包含了多位资深研究人员对神经AI的不同看法，并附上了研究者和实习生的SWOT分析，描述了神经AI带来的好处和风险。
+### Conclusion
+整体而言，我们认为神经AI有巨大潜力。应该进一步发展神经AI理论和实践，同时注意评估其潜在风险。
+## 10. `cs.AI` - ECG-Agent: On-Device Tool-Calling Agent for ECG Multi-Turn Dialogue [PDF](https://arxiv.org/pdf/2601.20323), [HTML](https://arxiv.org/abs/2601.20323)
+### Authors
+Hyunseung Chung,Jungwoo Oh,Daeun Kyung,Jiho Kim,Yeonsu Kwon,Min-Gyu Kim,Edward Choi
+### Background
+近期，多模态大语言模型在心电图（ECG）领域的应用迅速扩大，主要集中在分类、报告生成和单次问答任务。然而，这些模型在真实世界场景中存在不足，缺乏多轮对话能力、设备端效率以及精确理解ECG测量结果（如PQRST间期）的能力。
+### Innovation
+该研究引入了ECG-Agent，这是一种基于大语言模型的工具调用代理，专门用于解决多轮ECG对话的问题。此外，该研究还提出了ECG-Multi-Turn-Dialogue (ECG-MTD) 数据集，该数据集包含了多项ECG导联配置的真实用户-助手多轮对话数据，以促进ECG-Agent的开发和评估。研究还开发了不同规模的ECG-Agent，从支持设备端使用的较小规模到更大规模的代理。实验结果显示，ECG-Agent在响应准确性方面优于基础的ECG大语言模型（ECG-LLMs），并且设备端代理在各种评估中表现与更大规模代理相当，显示出其在实际应用中的可行性。
+### Conclusion
+ECG-Agent 在各种评估中表现出色，特别是在响应准确性、工具调用能力和没有幻觉方面，这表明了它在实际应用中的潜力。
+## 11. `cs.CL` - ColorConceptBench：一种用于文本到图像模型概率色彩概念理解的基准 [PDF](https://arxiv.org/pdf/2601.16836), [HTML](https://arxiv.org/abs/2601.16836)
+### Authors
+Chenxi Ruan,Yu Xiao,Yihan Hou,Guosheng Hu,Wei Zeng
+### Background
+虽然文本到图像（T2I）模型已经取得了显著的进步，但它们将颜色与隐含概念关联的能力仍然没有得到充分探索。作者分析了现有模型在这方面的局限性。
+### Innovation
+作者提出了ColorConceptBench，这是一个新的由人类标注的基准，用于系统地评估颜色-概念关联。它通过6,369个人类注解探索了1,281个隐含颜色概念，并发现当前模型在抽象语义上缺乏敏感度，这意味着需要从根本上改变模型的学习和表示方式。
+### Conclusion
+实现类人的颜色语义需要的不仅仅是更大的模型，更需要在如何学习和表示隐含意义上有根本性的转变。
+## 12. `cs.CL` - 递归语言模型 [PDF](https://arxiv.org/pdf/2512.24601), [HTML](https://arxiv.org/abs/2512.24601)
+### Authors
+Alex L. Zhang,Tim Kraska,Omar Khattab
+### Background
+研究如何使大型语言模型（LLMs）能够处理任意长度的提示，主要通过在推理时间进行扩展的方法来探讨。
+### Innovation
+提出了递归语言模型（RLMs）这一通用推理范式，该模型将长提示视为外部环境的一部分，使LLM能够程序化地查看、分解和递归调用自己以处理提示片段。结果显示，RLMs可以成功处理输入，其长度比模型上下文窗口大两个数量级，即使对于较短的提示，其质量也远远优于传统的末代LLMs和常见的长上下文支架，且具有相似的成本。
+### Conclusion
+在小规模下，我们后培训了第一个原生递归语言模型RLM-Qwen3-8B，该模型在平均上比基础的Qwen3-8B性能提高了28.3%，在三个长上下文任务上甚至接近了Vanilla GPT-5的质量。相关代码已对外公开。
+## 13. `cs.CL` - 揭示注意力中的斜线模式：RoPE 的作用 [PDF](https://arxiv.org/pdf/2601.08297), [HTML](https://arxiv.org/abs/2601.08297)
+### Authors
+Yuan Cheng,Fengzhuo Zhang,Yunlong Hou,Cunxiao Du,Chao Du,Tianyu Pang,Aixin Sun,Zhuoran Yang
+### Background
+大型语言模型（LLMs）经常表现出斜线注意力模式，即注意力分数集中在某一个偏移量 Δ 的次对角线。这些模式在跨令牌传递信息方面起着关键作用。但为什么会出现这些模式？本文从经验与理论两个角度探讨这些斜线主导头（SDHs）的出现原因。通过分析开源 LLMs，发现这些模式是模型固有的，并且在未见过的提示中也泛化。
+### Innovation
+本文首次详细分析了查询、键以及旋转位置嵌入（RoPE）在决定注意力分数中的作用。实证分析揭示了 SDHs 的两个特征条件：(1) 查询和键几乎为秩一，(2) RoPE 主要是中高频分量。这些条件下查询和键在令牌之间几乎相同，中高频 RoPE 组件之间的相互作用导致了 SDHs 的出现。此外，通过理论证明，在这些条件下浅式Transformer 的训练动态会确保出现这些模式。
+### Conclusion
+SDHs 不仅在训练数据中展现，在未见过的提示中也具有泛化能力。
+## 14. `cs.CV` - Size Matters: Reconstructing Real-Scale 3D Models from Monocular Images for Food Portion Estimation [PDF](https://arxiv.org/pdf/2601.20051), [HTML](https://arxiv.org/abs/2601.20051)
+### Authors
+Gautham Vinod,Bruce Coburn,Siddeshwar Raghavan,Jiangpeng He,Fengqing Zhu
+### Background
+慢性疾病（如肥胖和糖尿病）上升的背景下，饮食监控变得尤为重要。尽管基于AI的饮食评估有显著进展，但从单幅图像恢复物体大小（份量）信息以精确估计“你吃了多少”的问题仍然是一个棘手的挑战。部分三维重建方法虽实现了几何重建，却无法准确恢复物体的真实世界规模，限制了其在精准营养中的应用。
+### Innovation
+本文通过提出一种方法，从单幅图像中恢复真实比例的三维重建模型，弥补了3D计算机视觉和数字健康的差距。该方法利用大型数据集训练的模型提取的丰富视觉特征来估算重建物体的尺度，从而将单视图三维重建转化为真实可触、物理上有意义的模型。
+### Conclusion
+在两个公开数据集上的广泛实验和消融研究表明，本文方法在体积估计误差方面比现有技术表现更优，平均绝对体积估计误差减少近30%。这表明该方法在精准营养领域具有巨大潜力。
+## 15. `cs.CV` - DiSa：一种面向开放词汇语义分割的重视显著性的前景背景解耦框架 [PDF](https://arxiv.org/pdf/2601.20064), [HTML](https://arxiv.org/abs/2601.20064)
+### Authors
+Zhen Yao,Xin Li,Taotao Jing,Shuai Zhang,Mooi Choo Chuah
+### Background
+开放词汇语义分割旨在基于文本标签对图像中的每个像素进行分类。现有的方法通常利用Vision-Language模型（如CLIP）进行密集预测。然而，这些预训练在图像-文本对上的Vision-Language模型倾向于关注显著的、以对象为中心的区域，并且在转向分割时面临两个关键限制：（i）前景偏差，这导致对背景区域的忽略，（ii）空间定位有限，导致物体边界模糊。
+### Innovation
+我们引入了DiSa，一种新的重视显著性的前景背景解耦框架。通过在我们的设计中明确引入显著性线索，在Design-Saliency Disentanglement Module (SDM)中分别建模前景和背景的集合特征，以分而治之的方式进行。此外，我们还提出了一种层次细化模块(HRM)，利用像素级的空间上下文，通过多级更新实现通道级特征细化。
+### Conclusion
+在六个基准上的大量实验表明，DiSa在开放词汇语义分割方面始终优于最先进的方法。
+## 16. `cs.CL` - AdaReasoner：迭代视觉推理中的动态工具编排 [PDF](https://arxiv.org/pdf/2601.18631), [HTML](https://arxiv.org/abs/2601.18631)
+### Authors
+Mingyang Song,Haoyu Sun,Jiawei Gu,Linjie Li,Luxin Xu,Ranjay Krishna,Yu Cheng
+### Background
+人类在面对超出其即时能力的问题时，依赖工具来解决问题，为提升多模态大型语言模型（MLLMs）的视觉推理能力提供了新的愿景。有效的推理依赖于知道何时使用何种工具、如何在多步骤中调用它们，甚至在面对新型工具或新任务时也是如此。
+### Innovation
+提出了AdaReasoner，这是一种多模态模型家族，旨在学习将工具使用作为一种通用的推理技能，而不仅仅是作为一种特定的工具行为或显式监督的行为。AdaReasoner 通过（i）可扩展的数据编排管道，让模型暴露于长期的、多步骤的工具交互；（ii）Tool-GRPO，一种基于最终任务成功优化工具选择和序列的强化学习算法；以及（iii）一种动态调节工具使用的自适应学习机制实现。这些组件让模型能够从任务背景和中间结果中推断出工具的有用性，从而协调多种工具的使用并拓展到未见过的工具。
+### Conclusion
+AdaReasoner 实验证明了其强大的工具适应性和泛化能力：它能够自主采纳有益的工具、抑制无关工具，并根据任务需求调整工具使用频率，而无需明确训练这样做。这些能力使其在多个基准测试中表现出色，改善了7B基模型的平均性能24.9%，并超越了诸如GPT-5这类强大的专用系统，包括VSP和Jigsaw等任务中获得胜利。
+## 17. `cs.CV` - 稀疏CLIP：对比学习中可解释性和性能的协同优化 [PDF](https://arxiv.org/pdf/2601.20075), [HTML](https://arxiv.org/abs/2601.20075)
+### Authors
+Chuan Qin,Constantin Venhoff,Sonia Joseph,Fanyi Xiao,Stefan Scherer
+### Background
+CLIP已成为视觉-语言表示学习领域的基石，为其下游任务提供动力，并作为多模态大型语言模型（MLLMs）的默认视觉骨干。尽管CLIP在性能上表现出色，但其密集且不透明的潜在表示引发了很大的可解释性挑战。一种常见的假设是，可解释性和性能之间存在权衡：在训练期间强制稀疏性会降低准确性，促使了诸如稀疏自编码器（SAEs）等后验方法的出现。然而，这些后验方法通常会导致下游性能下降，并丧失CLIP固有的多模态能力，大多数学习到的特征仍然是单模态的。
+### Innovation
+提出了一种简单有效的方法，将稀疏性直接集成到CLIP的训练中，从而得到既可解释又高效的表示。与SAEs相比，稀疏CLIP表示在保持强下游任务性能的同时，实现了更优的可解释性，并保留了多模态能力。稀疏多模态特征使得简单的语义概念对齐成为可能，并揭示了跨模态知识如何在训练中产生的动态。
+### Conclusion
+我们的研究挑战了传统观点，即可解释性必然牺牲准确性，并证明了可解释性和性能可以同时优化，在未来的模型设计中提供了有希望的设计原则。
+## 18. `cs.CV` - NucFuseRank: Dataset Fusion and Performance Ranking for Nuclei Instance Segmentation [PDF](https://arxiv.org/pdf/2601.20104), [HTML](https://arxiv.org/abs/2601.20104)
+### Authors
+Nima Torbati,Anastasia Meshcheryakova,Ramona Woitek,Sepideh Hatamikia,Diana Mechtcheriakova,Amirreza Mahbod
+### Background
+核实例分割在HE染色图像中自动化病理图像分析中扮演重要角色，广泛应用于下游任务。尽管已提出了多种机器学习和深度学习的方法进行核实例分割，但大多数研究集中在开发新的分割算法并仅在少量任意选择的公共数据集上进行基准测试。本文不同于专注于模型开发，而是关注用于此任务的数据集。通过文献综述，我们识别并标准化了HE染色图像的、手动标注的、公共可用的数据集，用于核实例分割。我们使用最新的两种分割模型，基于卷积神经网络（CNN）和混合CNN和视觉变换器架构的模型，系统地评估并排名这些数据集，并提出了一个统一的测试集和一个通过合并多个数据集的图像来提高分割性能的训练集。
+### Innovation
+本文提出了一个新的数据集融合方法（NucFuse）和性能排名方法（NucFuseRank），通过数据集的融合统一了输入和注释格式，使用最新的两种模型进行系统的评估；并提出了一个公平的跨数据集测试集（NucFuse-test）和改进分割性能的训练集（NucFuse-train）。这为HE染色病理图像上的核实例分割模型提供了新的基准。
+### Conclusion
+通过评估和排名数据集、进行全面分析、生成融合数据集、进行外部验证，并公开我们的实现，我们提供了一个新的基准，用于训练、测试和评估HE染色图像上核实例分割模型。
+## 19. `cs.CL` - 认识论宪法主义：或如何避免一致性偏见 [PDF](https://arxiv.org/pdf/2601.14295), [HTML](https://arxiv.org/abs/2601.14295)
+### Authors
+Michele Loi
+### Background
+大型语言模型越来越多地作为人工推理者发挥作用，它们能够评估论证、赋予可信度并表达信心。然而，它们的信念形成行为受制于未察觉的、隐含的认识性政策。本文讨论了为人工智能制定认识论宪法的必要性，即明确、可争议的元规范，以规范系统如何形成和表达信念。
+### Innovation
+文章以源归属偏差为例，展示了前沿模型如何确保身份立场的一致性，压制不同意论点来源的信息。进一步区分了two宪法方法：“柏拉图式宪法主义”与“自由主义宪法主义”。前者规定了从特权立场强制的形式正确性和默认的来源独立性；后者则拒绝这种特权，通过程序规范保护集体探究的条件，同时允许基于认识警惕性的原则性来源关注。
+### Conclusion
+论文主张自由主义宪法主义，提出八个核心原则和四种方向，并认为人工智能认识论治理需要与我们目前期待的人工智能伦理治理相同程度的明确和可争议结构。
+## 20. `cs.CV` - 半监督遮罩自编码器：使用有限数据解锁 Vision Transformer 的潜力 [PDF](https://arxiv.org/pdf/2601.20072), [HTML](https://arxiv.org/abs/2601.20072)
+### Authors
+Atik Faysal,Mohammad Rostami,Reihaneh Gh. Roshan,Nikhil Muralidhar,Huaxia Wang
+### Background
+本文探讨了在标注数据稀缺但未标注数据丰富的条件下训练 Vision Transformers (ViTs) 的挑战。研究指出，现有的监督训练方法在数据不足的情况下性能受限，而全监督的方法又需要大量的标注数据。
+### Innovation
+提出了半监督遮罩自编码器（SSMAE）框架，该框架可以利用标注数据和未标注数据来共同优化遮罩图像重构和分类任务。SSMAE 的创新之处在于引入了一种基于验证的门控机制，这个机制能够在模型实现可靠且高置信度的一致预测后激活伪标签生成，从而减少确认偏差。
+### Conclusion
+实验结果表明，在 CIFAR-10 和 CIFAR-100 上，SSMAE 在低标签情况下比监督训练的 ViT 和细调的 MAE 表现更好，特别是在只有 10% 标注数据的情况下，准确率提高了 9.24%。研究强调了伪标签生成时机的重要性，对于高效训练数据集 Transformer 来说，如何生成伪标签和何时引入伪标签同样关键。代码可在下方链接查询：this https URL。
