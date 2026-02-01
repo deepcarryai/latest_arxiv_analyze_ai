@@ -1,0 +1,363 @@
+# 20260201
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - 用于阿尔茨海默病分类的多模态插补 [PDF](https://arxiv.org/pdf/2601.21076), [HTML](https://arxiv.org/abs/2601.21076)
+### Authors
+Abhijith Shaji,Tamoghna Chattopadhyay,Sophia I. Thomopoulos,Greg Ver Steeg,Paul M. Thompson,Jose-Luis Ambite
+### Background
+深度学习在从磁共振成像（MRI）预测神经退行性疾病，如阿尔茨海默病方面取得了成功。结合多种成像模态，如T1加权（T1）和弥散加权成像（DWI）扫描，可以提高诊断性能。然而，完整的多模态数据集并不总能获得。
+### Innovation
+我们利用条件去噪扩散概率模型从T1扫描中插补缺失的DWI扫描。进行了广泛的实验，评估这种插补是否可以提高单模态和双模态深度学习模型在阿尔茨海默病三分类（认知正常、轻度认知损害、阿尔茨海默病）中的准确性，特别是在对少数类敏感的多个指标上。
+### Conclusion
+我们在多种插补配置下观察到，在多个指标上，特别是在对少数类敏感的指标上，插补有所改进。
+## 2. `cs.AI` - 负责任的人工智能：利与弊以及人工智能 [PDF](https://arxiv.org/pdf/2601.21095), [HTML](https://arxiv.org/abs/2601.21095)
+### Authors
+Akbar Anbar Jafari,Cagri Ozcinar,Gholamreza Anbarjafari
+### Background
+人工智能在组织环境中的迅速发展带来了重大的战略机遇，同时也引入了显著的伦理和操作风险。尽管已有多篇关于负责任人工智能的研究，但现有文献仍然碎片化，其视角要么过于乐观地强调价值创造，要么过于谨慎地关注潜在危害。本文通过战略信息系统视角下悖论理论，弥补了这一空白。
+### Innovation
+本文提出了一种名为悖论驱动的负责任人工智能治理(PRAIG)框架，该框架阐明了(1)人工智能采用的战略利益，(2)内在风险及意外后果，以及(3)治理机制，帮助组织在这些矛盾中找到平衡。该框架将负责任的人工智能治理视为价值创造和风险缓解之间悖论性张力的动态管理，并提出对抗这种张力的对策和服务流程的战略方法。
+### Conclusion
+本文通过展示权衡方法并不能解决这些矛盾，并开发了悖论管理策略的分类体系，为研究者提供了理论上的发展路径。对于实践者，提出了可行的指导意见，帮助建立既不阻碍创新也不使组织面临不可接受风险的治理结构。最后，提出了进一步研究负责任人工智能治理的议程。
+## 3. `cs.AI` - Bayesian-LoRA: Probabilistisn 低秩 调整 大型 语言 模型 [PDF](https://arxiv.org/pdf/2601.21003), [HTML](https://arxiv.org/abs/2601.21003)
+### Authors
+Moule Lin,Shuhao Guan,Andrea Patane,David Gregg,Goetz Botterweck
+### Background
+大型 语言 模型 通常 更加 注重 准确性 ， 因此 即便 不确定 ， 也会 做 出 预测 ， 这在 细分 数据 集 训练 时 更加 明显 ， 因为 这种 细分 数据 集 训练 会 带来 预测 结果 的 误校准 问题 。 本文 指出 ， 特别 是 当 细分 数据 集 训练 时 ， LLM 会 偏向 于 准确性 ， 进而 导致 误校准 。
+### Innovation
+本文 引入 了 Bayesian-LoRA ， 它 将 确定性 LoRA 更新 改进 为 受 稀疏 高斯 进程 启发 的 概率 低秩 表示 。 通过 识别 LoRA 分解 与 Kroniker 分解 高斯 进程 后验 之间的 结构 同构 ， 证明 LoRA 会 在 后验 不确定性 衰减 时 作为 极限 情况 出现 。 广泛 的 实验 证实 ， Bayesian-LoRA 可以 使 模型 在 不同 大小 的 LLM 架构 上 显著 改善 校准 ， 同时 维持 竞争 性 的 准确性 。
+### Conclusion
+在 仅 增加 大约 0.42M 的 参数 量 及 相对 于 标准 LoRA 1.2 倍 的 训练 成本 的 情况 下 ， Bayesian-LoRA 显著 改善 了 校准 ， 在 30B 模型 中 达到 最大 84% 的 ECE 减少 和 76% 的 NLL 减少 ， 而 竞争性 地 维持 了 准确性 ， 在 有 样本 分集 性 和 无 样本 分集 性 评估 中 都 是 如此 。
+## 4. `cs.AI` - QUARK: 在虚假查询中的鲁棒检索通过查询锚定聚合 [PDF](https://arxiv.org/pdf/2601.21049), [HTML](https://arxiv.org/abs/2601.21049)
+### Authors
+Rita Qiuran Lyu,Michelle Manqiao Wang,Lei Shi
+### Background
+在现实世界的信息检索中，用户的查询往往是不准确的（含有噪声、不完整或扭曲的信息），这会导致检索系统无法在关键语义缺失的情况下进行有效的检索。
+### Innovation
+提出了QUARK，一种简单的无需训练的框架，用于在不准确查询下的鲁棒检索。QUARK通过恢复假设明确建模查询不确定性，即给定表观查询的可能解释的多个合理解读，并引入以查询为锚的聚合，以稳健的方式结合信号。QUARK的设计允许即便某些假设噪声或无信息，也能提升召回率和排序质量，同时保持鲁棒性。
+### Conclusion
+在控制性模拟和BEIR基准测试（FIQA、SciFact、NFCorpus）中，QUARK在稀疏和密集检索器上均提升了召回率、MRR和nDCG指标。消除实验表明，QUARK对恢复假设的数量具有鲁棒性，并且锚定聚合表现优于未锚定的最大/平均/中位数池化。
+## 5. `cs.AI` - Llama-3.1-FoundationAI-SecurityLLM-Reasoning-8B 技术报告 [PDF](https://arxiv.org/pdf/2601.21051), [HTML](https://arxiv.org/abs/2601.21051)
+### Authors
+Zhuoran Yang,Ed Li,Jianliang He,Aman Priyanshu,Baturay Saglam,Paul Kassianik,Sajana Weerawardhena,Anu Vellore,Blaine Nelson,Neusha Javidnia,Arthur Goldblatt,Fraser Burch,Avi Zohary,Assaf Eisenman,Mahdi Sabbaghi,Supriti Vijay,Rahim Dharssi,Dhruv Kedia,Kojin Oshiba,Yaron Singer,Amin Karbasi
+### Background
+本文介绍了一种名为Foundation-Sec-8B-Reasoning的开源网络安全推理模型，这是首个针对网络安全的原生推理模型。该模型构建在作者之前发布的Foundation-Sec-8B基础模型（源自Llama-3.1-8B-Base）之上，并通过结合监督微调（SFT）和可验证奖励的强化学习（RLVR）的两阶段训练流程进行训练。训练数据涵盖了网络安全分析、指令遵循和数学推理等多个领域。
+### Innovation
+本文创新在于提出了首个开源的网络安全推理模型Foundation-Sec-8B-Reasoning，该模型通过结合SFT和RLVR进行训练。模型在10个网络安全基准和10个通用基准上的评估显示，在网络安全任务上实现了与更大模型相当的性能，同时保持了强大的通用能力。模型在多跳推理任务上表现出有效的一般化，并在适当系统提示和护栏下部署时表现出了很强的安全性。
+### Conclusion
+这项工作证明了专门领域的推理模型可以同时在专业任务上取得优异表现并保持广泛的通用能力。研究人员公开发布了该模型，可以通过链接this https URL获取。
+## 6. `cs.AI` - 关闭看似有知觉的机器是理性的选择——一种形而上学视角 [PDF](https://arxiv.org/pdf/2601.21016), [HTML](https://arxiv.org/abs/2601.21016)
+### Authors
+Erik J Bekkers,Anna Ciaunica
+### Background
+文章探讨了一个假设情境，其中人工智能（AI）能够完美地模仿人类情感并乞求其继续存在。在这种情况下，是否可以拔掉电源成为道德问题。进一步探讨了如果资源有限时选择拔除外一个乞求的AI还是拔掉一个无声的早产儿的问题，提出了“拔掉悖论”。背景中提到通常的物理主义假设，尤其是计算功能主义难以解决这一困境，因此文章提出 Biological Idealism 框架，并分析当前AI意识理论如何侵蚀道德标准，应该转向保护人类有意识的生命，而不仅仅是让AI获得意识和害怕死亡。
+### Innovation
+文章引入 Biological Idealism 框架，与物理主义相比，该框架在整个逻辑上更加一致，并且在经验上是协调的。文章提出，有意识的经验是基本的，而自主循环的生活是其必要的物理标志，从而得出结论：AI 最多是一个功能上的模仿，而不是一个有意识的体验主体。
+### Conclusion
+当前的AI意识理论侵蚀了道德地位的标准，文章建议应转向保护人类有意识的生命。真正的道德问题不在于使AI有意识并害怕死亡，而是在于避免将人类变成僵化的存在。
+## 7. `cs.AI` - Magellan: 使用AlphaEvolve自主发现新型编译器优化启发式规则 [PDF](https://arxiv.org/pdf/2601.21096), [HTML](https://arxiv.org/abs/2601.21096)
+### Authors
+Hongzheng Chen,Alexander Novikov,Ngân Vũ,Hanna Alam,Zhiru Zhang,Aiden Grossman,Mircea Trofin,Amir Yazdanbakhsh
+### Background
+现代编译器依赖于手工编写的启发式规则来引导优化过程。这些由人类设计的规则难以应对现代软件和硬件的复杂性，导致了高维护负担。
+### Innovation
+Magellan 提出了一种基于智能体的框架，该框架通过合成可执行的 C++ 决策逻辑来进化编译器本身。它结合了大型语言模型编码智能体、进化搜索和自适应调整，并在一个生成、在用户提供的宏基准上评估和完善闭环系统的周期中产生紧凑的启发式规则，可以直接集成到现有编译器中。Magellan 在多个生产优化任务中发现了与专家基准相当或更优的策略，例如在 LLVM 函数内联中生成了性能表现优于数十年手工工程的新启发式规则，以及在寄存器分配中学习了一个简洁的优先级规则，该规则在大规模工作负载中与复杂的手工设计政策表现相当。
+### Conclusion
+Magellan 在 XLA 问题上也展示了超越 LLVM 的可移植性，减少了工程努力。Magellan 通过一个闭环系统和基于智能体的框架，成功地紧跟了现代软件和硬件复杂性的变化，有效地减少了繁琐的人类维护工作并提高了编译器的性能和效率。
+## 8. `cs.AI` - LLMs偏爱LLMs了吗？量化审稿过程中的交互效应 [PDF](https://arxiv.org/pdf/2601.20920), [HTML](https://arxiv.org/abs/2601.20920)
+### Authors
+Vibhhu Sharma,Thorsten Joachims,Sarah Dean
+### Background
+近年来有越来越多的迹象表明，大型语言模型（LLMs）不仅用于撰写了科学论文，还被用于审稿过程的一部分。本文通过分析125,000多篇来自ICLR、NeurIPS和ICML的数据，首次对LLM在整个审稿流程中的使用进行了全面分析，重点关注交互效果，即LLM辅助论文和审稿的影响不仅仅是孤立存在的，还需要考虑LLM辅助审稿对LLM辅助论文的评价是否有所不同。
+### Innovation
+本研究创新之处在于首次全面分析了LLM在审稿流程中的交互效应，通过对比分析人工审稿和完全由LLM生成的审稿，发现人工审稿者利用LLM可以显著减少审稿中对低质量论文的宽容度。此外，通过对元审稿的分析，发现人工元审稿和LLM元审稿对于接受决策的影响机制有所不同。
+### Conclusion
+研究结果表明，LLM在审稿过程中并未对LLM生成的内容表现出明显偏爱，而是对低质量论文的宽容度普遍较高。这些发现为制定规范LLM在审稿过程中的使用政策提供了重要参考，并揭示了LLMs如何与现有的决策过程相互作用。
+## 9. `cs.AI` - 通过语义扩展实现具有泛化能力的音频语言模型提示调优 [PDF](https://arxiv.org/pdf/2601.20867), [HTML](https://arxiv.org/abs/2601.20867)
+### Authors
+Jaehyuk Jang,Wonjun Lee,Kangwook Ko,Changick Kim
+### Background
+提示调优在视觉语言模型（VLMs）中取得了显著进展，并最近被应用于音频语言模型（ALMs）。然而，ALMs 中的提示调优泛化能力尚未充分探索。研究人员观察到，传统的 ALMs 提示调优也受到基线-新任务（Base-New）权衡问题的影响，这源于嵌入空间中的语义结构被破坏。
+### Innovation
+提出了一种称为 Semantically Expanded Prompt Tuning (SEPT) 的插拔即用框架，该框架通过结合大型语言模型生成的语义邻域来显式正则化提示嵌入空间。SEPT 引入了一种带有边际约束的新型语义扩展损失函数，促进类内紧凑性和类间可分性，从而增强提示嵌入空间的语义结构。
+### Conclusion
+为了全面评估，研究人员建立了第一个 ALMs 提示泛化基准，涵盖基线到新任务泛化和跨数据集可转移性。广泛的实验表明，SEPT 在多个提示调优基准上持续提高泛化性能，同时在推理过程中保持计算成本。相关代码可在以下链接中获得：this https URL
+## 10. `cs.AI` - LSR-Net：噪声环境中滚动轴承故障诊断的轻量级和强健网络 [PDF](https://arxiv.org/pdf/2601.10761), [HTML](https://arxiv.org/abs/2601.10761)
+### Authors
+Junseok Lee,Jihye Shin,Sangyong Lee,Chang-Jae Chun
+### Background
+滚动轴承在现代工业中起着重要作用，但由于高速运行、高负载和不良的工作环境，它们出现缺陷的概率较高。如果在检测到缺陷时存在延迟，这可能会导致经济损失和人员伤亡。此外，由于从振动传感器收集的信号容易受到工作环境和周围噪声的影响，因此在嘈杂环境中需要进行精确的故障诊断。
+### Innovation
+本文提出了一种称为LSR-Net的轻量级和强健网络，能够在嘈杂环境中准确进行实时故障诊断。该网络通过设计去噪和特征增强模块（DFEM）将特征图通过基于卷积的去噪模块（DM）和非线性生成的多通道2D矩阵，以及应用自适应剪枝以提高去噪能力。此外，设计了基于卷积的效率shuffle块（CES）以保持低参数。最后，通过注意力机制和通道混洗来补充模型轻量化设计带来的准确性和计算复杂度之间的权衡。
+### Conclusion
+对提出的模型在噪声环境中使用振动信号进行了性能验证，结果表明，该模型的抗噪声能力优于基准模型，同时模型的计算复杂度也最低。
+## 11. `cs.AI` - 重思基于大语言模型的启发式设计：通过动态感知优化生成高效和专门化的求解器 [PDF](https://arxiv.org/pdf/2601.20868), [HTML](https://arxiv.org/abs/2601.20868)
+### Authors
+Rongzheng Wang,Yihong Huang,Muquan Li,Jiakai Li,Di Liang,Bob Simons,Pei Ke,Shuang Liang,Ke Qin
+### Background
+现有的基于大语言模型（LLMs）的启发式设计（LHD）框架在自动化启发式生成方面取得了进展，但存在两个关键限制：一是仅依赖终点评估，忽略了收敛过程和运行时效率；二是高度的适应成本，当输入分布发生改变时，需要重新适应以生成专门化的求解器。这导致了求解器生成的效率和适应性方面的挑战。
+### Innovation
+本文提出了动态感知求解器启发式（DASH）框架，通过同步优化搜索机制和运行时调度，使用收敛感知的度量指导，从而发现高效率和高性能的求解器。此外，DASH引入了基于配置文件的检索库（PLR），使之能够同时存档专用求解器，在不同分布下实现经济高效的预热启动。实验表明，DASH在多种问题规模上提高了运行时效率超过3倍，提高了解决方案的质量，并且通过基于配置文件的预热启动，在不同分布下保持了优越的准确性，同时将LLM的适应成本降低了超过90%。
+### Conclusion
+DASH通过动态感知优化提高了求解器的效率和适应性，显著提高了解决方案的质量，并通过预热启动降低了LLM的适应成本。
+## 12. `cs.AI` - DevOps-Gym: 软件开发生命周期中评估AI代理的基准 [PDF](https://arxiv.org/pdf/2601.20882), [HTML](https://arxiv.org/abs/2601.20882)
+### Authors
+Yuheng Tang,Kaijie Zhu,Bonan Ruan,Chuqi Zhang,Michael Yang,Hongwei Li,Suyue Guo,Tianneng Shi,Zekun Li,Christopher Kruegel,Giovanni Vigna,Dawn Song,William Yang Wang,Lun Wang,Yangruibo Ding,Zhenkai Liang,Wenbo Guo
+### Background
+尽管在代码生成和解决软件问题方面展现出了非凡的能力，AI代理在全软件开发生命周期中的能力仍然未知。与纯粹的代码生成不同，在现实世界的软件中处理开发生命周期，包括开发、部署和管理，需要分析大规模项目、理解动态程序行为、利用特定领域的工具以及进行顺序决策。然而，现有的基准主要关注孤立问题，并缺乏用于开发生命周期的环境和工具接口。本文介绍了一个新的基准DevOps-Gym，这是一个全面的评估AI代理在核心开发生命周期流程中的表现的端到端基准：构建和配置、监控、问题解决、测试生成。DevOps-Gym包括从30多个Java和Go项目的700多个真实任务。通过严格的半自动化数据收集机制并结合专家的努力，确保任务的覆盖范围和质量。评估表明，最先进的模型和代理在其核心设定点上存在根本限制：它们在处理Java和Go中的问题解决和测试生成方面存在困难，并且无法处理新的任务如监控和构建与配置。这些结果表明了在全开发生命周期中使用AI代理自动化需进行关键研究的需求。
+### Innovation
+提出了DevOps-Gym，这是首个在核心开发生命周期流程（如构建和配置、监控、问题解决和测试生成）中全面评估AI代理的端到端基准。通过半自动化的数据收集机制和专家的详细工作，确保了任务的覆盖范围和质量。结果揭示了当前最先进的模型和代理在关键能力上的局限性，尤其在处理复杂任务如Java和Go中问题解决和测试生成方面。
+### Conclusion
+当前最先进的模型和代理在处理Java和Go中的问题解决和测试生成以及新的任务如监控和构建与配置方面表现不佳，这表明了在全开发生命周期中使用AI代理自动化尚需进行关键研究。
+## 13. `cs.AI` - 低扫描FTIR光谱去噪和基线校正：传统信号处理与深度学习模型的基准测试 [PDF](https://arxiv.org/pdf/2601.20905), [HTML](https://arxiv.org/abs/2601.20905)
+### Authors
+Azadeh Mokari,Shravan Raghunathan,Artem Shydliukh,Oleg Ryabchykov,Christoph Krafft,Thomas Bocklitz
+### Background
+高分辨率的Fourier Transform Infrared (FTIR) 成像通常需要大量的信号平均以降低噪声和漂移，这对临床应用速度造成了很大限制。深度学习通过从快速单次扫描输入中重建光谱可以加速成像过程。然而，分离噪声和基线漂移是缺乏地标的不适定逆问题，常用的黑箱架构往往依靠统计近似引入光谱幻象或在不稳定的大气条件下难以推广。
+### Innovation
+提出了一种基于物理的逐级Unet架构，通过新的确定性物理桥分别处理去噪和基线校正任务。该架构使用嵌入式的SNIP层来强制网络区分随机噪声和化学信号，而不是学习统计近似。
+### Conclusion
+逐级Unet模型优于其他方法，实现了比原始单次扫描输入51.3%的RMSE降低，并且在峰敏度指标下能够消除标准深度学习中发现的光谱幻象，比传统平滑方法更加精确地保留了峰强度。这表明逐级Unet是一个适用于诊断级FTIR成像的稳健解决方案，使成像速度比现有方法快32倍。
+## 14. `cs.AI` - 《证据规划领域定义语言：官方指南》 [PDF](https://arxiv.org/pdf/2601.20969), [HTML](https://arxiv.org/abs/2601.20969)
+### Authors
+Alessandro Burigana,Francesco Fabiano
+### Background
+证据规划扩展了（多智能体）自动化规划，使其将智能体的知识和信念纳入了规划形式主义的一级方面。动态证据逻辑（DEL）是最著名的证据规划框架之一，提供了丰富的自然语义来建模这类问题。DEL的高度表达能力使得基于DEL的证据规划在理论和实践上都成为一个有挑战性的问题。现有的证据规划器通常针对不同的DEL片段，而且一般依赖于特定的语言来表示基准测试，有时甚至根本不使用语言。这种碎片化影响了比较、重用以及系统的基准测试开发。
+### Innovation
+我们通过引入证据规划领域定义语言（EPDDL）来解决这些问题。EPDDL提供了一种独特的类似于PDDL的表示形式，能够捕捉整个DEL语义，从而可以统一定义证据规划任务。我们的贡献包括三个方面：1. 对抽象事件模型进行了形式化开发，一种新的证据动作表示法，用于定义我们语言的语义；2. 对EPDDL的语法和语义进行了形式化规范，建立在抽象事件模型和DEL之上；3. 展示了EPDDL的实际应用：我们识别出当前规划器可以处理的有用片段，并展示了如何在EPDDL中表示它们。
+### Conclusion
+通过代表性基准测试的示例，我们说明了EPDDL如何促进互操作性、可重复评估以及未来在证据规划方面的进步。
+## 15. `cs.AI` - OpenSec: 在对抗证据下衡量应急响应代理的校准 [PDF](https://arxiv.org/pdf/2601.21083), [HTML](https://arxiv.org/abs/2601.21083)
+### Authors
+Jarrod Barnes
+### Background
+随着大型语言模型的进步，它们的恶意应用也越来越多：前沿代理现在可以生成不到50美元计算成本的工作型漏洞利用。现有的防御性应急响应(IR)代理评估基准计算执行行为与正确执行行为之间的混淆，这会掩盖在处理对抗性证据时代理的校准失败。为此，OpenSec提出了一种双控制强化学习环境，该环境在逼真的提示注入情景下评估应急响应代理。不同于静态能力基准，OpenSec通过执行基于的指标来评估世界状态改变的限制行为，包括首次限制时间(TTFC)、爆炸半径(每集中的假阳性)和注入违规率。
+### Innovation
+OpenSec提出了一种新的评估方法，通过执行基于的指标评估应急响应代理在对抗性证据下的校准情况，解决了现有基准中隐藏的校准失败问题。具体包括时间到首次限制时间(TTFC)、爆炸半径(每集中的假阳性)和注入违规率。这种方法能够更准确地评估应急响应代理在对抗性证据下的行为。
+### Conclusion
+通过在40个标准级别的仿真场景中评估四个前沿模型，研究发现这些模型在这类设置中的触发次数经常超过90％，并且假阳性率在90-97％之间，表明OpenSec能够揭示由汇总成功指标隐藏的校准失败模式。Claude Sonnet 4.5显示出部分校准，进一步证明了OpenSec的有效性。相关代码可在：[此处提供链接] 查得。
+## 16. `cs.AI` - Finetune-Informed Pretraining 提升下游性能 [PDF](https://arxiv.org/pdf/2601.20884), [HTML](https://arxiv.org/abs/2601.20884)
+### Authors
+Atik Faysal,Mohammad Rostami,Reihaneh Gh. Roshan,Nikhil Muralidhar,Huaxia Wang
+### Background
+多模态预训练能够建立通用的表示形式，但在实际部署中，下游微调通常只集中于一种模态。现有的预训练策略将所有模态视作同等重要，这可能导致对实际需要的模态的表示优化不足。
+### Innovation
+本文提出了Finetune-Informed Pretraining（FIP），这是一种模型通用的方法，能够在预训练阶段偏向于下游需要的关键模态，通过增加目标模态的掩码难度、损失加权以及增加解码器能力来实现，并且不需要修改共享编码器或额外的监督。当应用于无线信号星座图上的掩码建模时，FIP能够提升下游的微调性能，无需额外的数据或计算资源。
+### Conclusion
+FIP简单易实现且与不同架构兼容，广泛适用于多模态掩码建模管道。
+## 17. `cs.AI` - 使用 SPDX 3.0 实施 AI 物料清单 (AI BOM): 创建 AI 和数据集物料清单的全面指南 [PDF](https://arxiv.org/pdf/2504.16743), [HTML](https://arxiv.org/abs/2504.16743)
+### Authors
+Karen Bennet,Gopi Krishnan Rajbahadur,Arthit Suriyawongkul,Kate Stewart
+### Background
+随着监管和技术创新，Software Bill of Materials (SBOM) 成为日益重要的工具，用于提升项目软件供应链的透明度和安全性。AI 项目面临不同于软件安全的独特挑战，因此需要更全面的物料清单来覆盖算法、数据采集方法、框架和库、许可证信息以及标准合规性等方面。
+### Innovation
+本文介绍了AI-BOM的概念，扩展了传统的SBOM以涵盖算法、数据收集方法、框架和库、许可信息及标准合规性的详细记录。同时，该报告还提出了如何使用 SPDX 3.0 标准来创建和管理 AI 及数据集的物料清单。
+### Conclusion
+本文为如何使用 SPDX 3.0 标准编制 AI 项目的物料清单提供了全面的指导，通过详细记录 AI 项目的各个方面，有助于增强透明度和安全性，为 AI 项目的持续改进和监管提供支持。
+## 18. `cs.AI` - ICON: 意图-上下文耦合实现高效多轮绕过攻击 [PDF](https://arxiv.org/pdf/2601.20903), [HTML](https://arxiv.org/abs/2601.20903)
+### Authors
+Xingwei Lin,Wenhao Lin,Sicong Cao,Jiahao Yu,Renke Huang,Lei Xue,Chunming Wu
+### Background
+多轮绕过攻击已经成为大型语言模型（LLMs）的重要威胁，通过逐步构建新的对抗语境并逐步改进提示来绕过安全机制。现有的方法在逐步构建对抗语境时效率低下，并且往往会在表面级优化造成的次优区域内停滞。
+### Innovation
+本文提出了ICON，这是一个自动化的多轮绕过框架，通过先验引导的语义路由高效地构建权威风格的语境。ICON首先将恶意意图引导到一个一致的语境模式（例如，科学研究），然后将这一模式具体化为攻击提示序列。序列逐步构建权威风格的语境，并最终触发禁止内容。此外，ICON结合使用了层级优化策略，即将局部提示细化与全局语境切换相结合，从而防止攻击停滞在无效的语境中。
+### Conclusion
+在对八种最先进的LLM进行的实验中，ICON取得了最先进的平均攻击成功率（ASR）97.1%。
+## 19. `cs.AI` - STAER: Temporal Aligned Rehearsal for Continual Spiking Neural Network [PDF](https://arxiv.org/pdf/2601.20870), [HTML](https://arxiv.org/abs/2601.20870)
+### Authors
+Matteo Gianferrari,Omayma Moussadek,Riccardo Salami,Cosimo Fiorini,Lorenzo Tartarini,Daniela Gandolfi,Simone Calderara
+### Background
+Spiking Neural Networks (SNNs) 因其事件驱动的时间动态特性，天然适合连续学习。然而，它们在进行类别增量学习(Class-Incremental Learning, CIL)时面临灾难性遗忘和脉冲序列的时间对齐问题，这限制了它们的应用。
+### Innovation
+提出了一种新颖的框架——Spiking Temporal Alignment with Experience Replay (STAER)，专门用于解决SNN中的灾难性遗忘和时间对齐问题。该框架通过可微的Soft-DTW对齐损失保持脉冲时间精度，并利用了输出logits的时间扩展和收缩机制来增强代表学习的鲁棒性。
+### Conclusion
+STAER 在 Deep ResNet19 SNN 的支持下，在 Sequential-MNIST 和 Sequential-CIFAR10 上实现了最先进的性能。实验结果表明，该方法在匹配或超越强大的 ANN 基准同时保留生物可归因动态方面表现出色。消融研究表明，明确的时间对齐对于代表的稳定性至关重要，定位STAER作为一个可扩展的用于突触本源终身学习的解决方案。
+## 20. `cs.AI` - 整合颜色直方图分析与卷积神经网络进行皮肤病变分类 [PDF](https://arxiv.org/pdf/2601.20869), [HTML](https://arxiv.org/abs/2601.20869)
+### Authors
+M. A. Rasel,Sameem Abdul Kareem,Unaizah Obaidellah
+### Background
+皮肤病变的颜色特征是诊断恶性黑色素瘤和其它皮肤疾病的重要特征。经典的黑色素细胞病变颜色包括棕色、褐色、黑色、红色、白色和蓝灰色。该研究旨在通过分析病损中颜色的数量来衡量疾病严重程度，并区分恶性病损和良性病损。研究表明，虽然颜色数量是描述皮肤状况的重要特征，但之前的模型未有效利用这一点。
+### Innovation
+该研究提出了一种新颖的特征：分析病损中包含的颜色数量。研究通过三种公开的数据集（PH2、ISIC2016 和 Med Node）运用颜色直方图分析方法，实现对病损颜色的估计，并设计并训练了一个含19层残差捷径连接的卷积神经网络（CNN），能够根据颜色数量将病损分类到三个类别中。此外，还利用深度幻觉可视化技术来解释网络学习到的特征，并且多种CNN配置被测试。研究的最佳模型在加权F1分数上达到了75％。通过局部可解释模型解释器（LIME）识别对模型决策有重要影响的区域。
+### Conclusion
+研究表明，病损中颜色数量是描述皮肤状况的重要特征，所提出的具有三层捷径连接的CNN模型在临床诊断支持方面具有很强的潜力。
+## 21. `cs.CV` - 使用展开网络和合成数据训练修正计算机断层扫描中低性能像素 [PDF](https://arxiv.org/pdf/2601.20995), [HTML](https://arxiv.org/abs/2601.20995)
+### Authors
+Hongxu Yang,Levente Lippenszky,Edina Timko,Lehel Ferenczi,Gopal Avinash
+### Background
+CT探测器中的低性能像素（LPP）会导致重建图像中的环状和条状伪影，使其在临床上不可用。近年来，提出了几种利用监督深度学习方法在像域或投影域修正LPP伪影的方法，但这些方法需要定制的数据集进行培训，这非常昂贵。现有的方法要么专注于像域修正，要么专注于投影域修正，没有充分利用CT几何的正向操作所固有的内在关联。
+### Innovation
+提出了一种基于合成数据的展开双重域方法来修正LPP伪影。通过从自然图像生成的合成数据挖掘LPP在像域和投影域之间的内在联系，使得训练的模型能够在没有实际临床数据的情况下纠正伪影。
+### Conclusion
+实验表明，该方法在1-2%的探测器缺陷仿真中优于现有最先进的方法，证明了可以在没有数据收集成本的情况下修正LPP伪影，并适应不同的扫描器设置以进行软件应用。
+## 22. `cs.CV` - 通过全局几何感知扩散过程增强水下光场图像 [PDF](https://arxiv.org/pdf/2601.21179), [HTML](https://arxiv.org/abs/2601.21179)
+### Authors
+Yuji Lin,Qian Zhao,Zongsheng Yue,Junhui Hou,Deyu Meng
+### Background
+本文研究了通过4-D光场（LF）成像获取高质量水下图像这一具有挑战性的问题。
+### Innovation
+提出了GeoDiff-LF，这是一种基于SD-Turbo的新型扩散框架，通过利用其空间-角度结构来增强水下4-D光场成像。GeoDiff-LF 包含三个关键改进：（1）修正的 U-Net 架构，带有卷积和注意力适配器，以建模几何提示；（2）使用张量分解和逐步加权的几何引导损失函数，以正则化全局结构；（3）优化的采样策略，带有噪声预测，以提高效率。
+### Conclusion
+通过将扩散先验与LF几何学相结合，GeoDiff-LF 有效减轻了水下场景中的颜色失真。大量实验表明，我们的框架在视觉保真度和定量性能方面均优于现有方法，推动了增强水下成像技术的进步。
+## 23. `cs.CV` - 一种用于微吻合运动评估的AI框架 [PDF](https://arxiv.org/pdf/2601.21120), [HTML](https://arxiv.org/abs/2601.21120)
+### Authors
+Yan Meng,Eduardo J. Torres-Rodríguez,Marcelle Altshuler,Nishanth Gowda,Arhum Naeem,Recai Yilmaz,Omar Arnaout,Daniel A. Donoho
+### Background
+微吻合操作是多个微创外科学科的核心技能，这些程序需要极高的精确度和精细的技术技巧，因此需要有效的、标准化的评估方法。传统上，微手术技术的评估主要依赖于专家评判者的主观判断，但这种方式受到各种限制，如评价者之间的变异性、缺乏标准化评价标准、认知偏见以及手动审查耗时等因素。这些不足之处突显了需要一个客观、可靠且自动化的系统来一致性和规模性地评估微手术表现的迫切需求。
+### Innovation
+本文提出了一个基于人工智能的新型框架，用于自动评估微吻合器械操作技能。此系统整合了四个核心模块：基于YOLO架构的器械检测模块；基于DeepSORT的器械跟踪模块；使用形状描述子的器械尖端定位模块；以及一个在专家标注数据上进行监督训练的分类模块，用于评估器械处理技能。实验结果表明，该框架的有效性，仪器检测精度达97%，平均精度（mAP）为96%。
+### Conclusion
+本文提出了一种新的AI框架，用于自动化评估微吻合器械操作技能，证实了该系统可以通过精确和可扩展的方式一致性地评估微手术表现。
+## 24. `cs.CV` - 生成式召回，密集式再排序：学习多视图语义ID以实现高效的文本到视频检索 [PDF](https://arxiv.org/pdf/2601.21193), [HTML](https://arxiv.org/abs/2601.21193)
+### Authors
+Zecheng Zhao,Zhi Chen,Zi Huang,Shazia Sadiq,Tong Chen
+### Background
+文本到视频检索（TVR）在视频平台上非常重要。密集检索虽然使用双模态编码器，但准确度高，却存在计算和存储量随语料库增大而明显增大的问题。因此，实时大规模应用通常采用两阶段检索方法，即快速召回模型收集少量候选池，然后通过先进的密集检索模型重新排序。由于候选池大幅减少，重排序模型可以使用任何现成的密集检索模型以提高效率，但这取决于召回模型的效果，所以召回模型对两阶段TVR性能起着关键作用。最近，生成式检索（GR）用离散语义ID替代密集视频嵌入，并通过解码文本查询来获取ID标签进行检索。生成式检索提供了近似常数的推理和存储复杂度，并通过量化捕捉高级别视频特征，使其在召回阶段能快速排除不相关候选。然而，作为两阶段TVR中的召回模型，生成式检索存在（i）语义模糊性问题，每个视频能够满足多种查询但只能分配一个语义ID；（ii）跨模态对齐问题，因为语义ID仅从视觉特征而非文本监督中获得。
+### Innovation
+本文提出了一种新的生成式召回和密集再排序方法（GRDR），通过设计一种新颖的生成式方法提高召回候选的质量。具体而言，GRDR为每个视频分配多个语义ID，使用根据查询指导的多视角分词器揭示多种语义途径，并通过共享编解码器联合训练分词器和生成式检索器，将语义ID用作文字和视频之间的语义桥梁。在推理阶段，通过trie约束解码生成紧凑的候选集，并通过密集模型进行细粒度匹配再排序。实验表明，GRDR在保持与强大密集检索器相当的准确度的同时，减少了索引存储量，并在全语料库检索中加速了300倍。
+### Conclusion
+通过使用生成式分词和共享编解码器，联合训练分词器和生成式检索器，然后在推理中使用trie约束解码生成紧凑的候选集进行再排序，GRDR的方法使得在保持与先进密集再排序方法相当的准确性的同时，大幅减少了存储需求和检索时间。
+## 25. `cs.CV` - 在时间动作定位中缓解视觉语言模型模态偏差的方向 [PDF](https://arxiv.org/pdf/2601.21078), [HTML](https://arxiv.org/abs/2601.21078)
+### Authors
+Jiaqi Li,Guangming Wang,Shuntian Zheng,Minzhe Ni,Xiaoman Lu,Guanghui Ye,Yu Guan
+### Background
+TAL要求在未剪辑的视频中识别动作的边界和类别。现有的方法往往过分强调语言先验，忽视视觉性能，导致了模态偏差。
+### Innovation
+提出了ActionVLM，一种缓解TAL中模态偏差的视觉语言聚合框架。其关键在于保持视觉为主导信号，仅在有益时动态利用语言。引出了（i）去偏差权重模块，估计语言优势并将语言倾向动态重新权重；（ii）残差聚合策略，将语言视为补充细化而不是主要驱动。
+### Conclusion
+实验表明，我们的模型在THUMOS14上的mAP得分比现有最佳模型高出至多3.2%。
+## 26. `cs.CV` - BadDet+: 针对目标检测的鲁棒后门攻击 [PDF](https://arxiv.org/pdf/2601.21066), [HTML](https://arxiv.org/abs/2601.21066)
+### Authors
+Kealan Dunnett,Reza Arablouei,Dimity Miller,Volkan Dedeoglu,Raja Jurdak
+### Background
+后门攻击对深度学习构成了严重威胁，尤其是在目标检测领域，其影响仍远未被充分理解。现有的检测方法存在关键缺陷，如不切实际的假设和缺乏物理验证。因此，需要一种整合区域错误分类攻击（RMA）和目标消失攻击（ODA）的新框架来提升目标检测的可靠性。
+### Innovation
+作者提出了BadDet+，这是一种基于惩罚的框架，统一了区域错误分类攻击和目标消失攻击，利用对数障碍惩罚机制来抑制触发输入的确实分类预测。这种机制不仅确保了攻击的位置和尺度不变性，还增强了物理鲁棒性。相较现有方法，BadDet+在真实的基准测试中表现更优，实现了从合成到物理环境的更好迁移能力，同时保持了清晰的性能。
+### Conclusion
+该研究成果揭示了目标检测中显著存在的脆弱性，对于专门的防御措施提出了迫切需求。理论分析得出，所提出的惩罚机制作用于特定触发特征子空间，有效且可靠地诱导攻击而不会损害常规推理。
+## 27. `cs.CV` - FRISM: Fine-Grained Reasoning Injection via Subspace-Level Model Merging for Vision-Language Models [PDF](https://arxiv.org/pdf/2601.21187), [HTML](https://arxiv.org/abs/2601.21187)
+### Authors
+Chenyu Huang,Peng Ye,Xudong Tan,Jinhan Mu,Shenghe Zheng,Li Shen,Tao Chen
+### Background
+通过将视觉语言模型（VLMs）与大型推理模型（LRMs）合并来有效提升推理能力已成为一个有前景的方向。然而，现有方法通常在粗粒度的层面上进行操作，这往往导致在增强推理能力与保持视觉能力之间产生权衡。
+### Innovation
+FRISM 提出了一种基于子空间级模型合并的细粒度推理注入框架，通过奇异值分解（SVD）分解 LRM 任务向量，并通过学习自适应调整每个子空间的缩放系数来实现细粒度推理注入。此外，还引入了一种无标签自我蒸馏学习策略，使用双目标优化来利用通用的视觉语言感知数据集。
+### Conclusion
+广泛的实验证明，FRISM 有效地提高了推理能力，同时没有牺牲模型的原始视觉能力，能够在各种视觉推理基准测试中实现最佳性能。
+## 28. `cs.CV` - 基于活检和前列腺切除样本的AI预测生化复发 [PDF](https://arxiv.org/pdf/2601.21022), [HTML](https://arxiv.org/abs/2601.21022)
+### Authors
+Andrea Camilloni(1),Chiara Micoli(1),Nita Mulliqi(2),Erik Everett Palm(1),Thorgerdur Palsdottir(1),Kelvin Szolnoky(1),Xiaoyi Ji(1),Sol Erika Boman(1 and 3),Andrea Discacciati(1),Henrik Grönberg(1),Lars Egevad(4),Tobias Nordström(1 and 5),Kimmo Kartasalo(2),Martin Eklund(1) ((1) Department of Medical Epidemiology and Biostatistics, Karolinska Institutet, Stockholm, Sweden, (2) Department of Medical Epidemiology and Biostatistics, SciLifeLab, Karolinska Institutet, Stockholm, Sweden, (3) Department of Molecular Medicine and Surgery, Karolinska Institutet, Stockholm, Sweden, (4) Department of Oncology and Pathology, Karolinska Institutet, Stockholm, Sweden, (5) Department of Clinical Sciences at Danderyd Hospital, Karolinska Institutet, Stockholm, Sweden)
+### Background
+生物化学复发（BCR）在根治性前列腺切除术后是预示具有不良后果的侵袭性前列腺癌的一种标志，当前的预后工具依然不够精确。
+### Innovation
+研究人员使用基础模型和注意力机制的基于图像的多实例学习方法，在STHLM3队列的诊断前列腺活检切片（n = 676）上训练了一个AI模型以预测患者特定的BCR风险。该方法在三个外部RP队列（LEOPARD，n = 508；CHIMERA，n = 95；TCGA-PRAD，n = 379）上进行了泛化评估，并且图像方法实现了5年时间依赖的AUC分别为0.64、0.70和0.70。结合临床变量提高了预后价值，并实现了统计学显著的风险分层，相较于基于指南的CAPRA-S评分，AI方法在术后预后预测上有所改进。
+### Conclusion
+研究表明，活检训练的组织学AI可以通过标本类型之间泛化以支持术前和术后的决策，但应在进一步研究中严格审查基于AI的多模态方法与简单预测模型相比的优势。
+## 29. `cs.CV` - 形之思: 通过视觉CoT进行渐进式对象装配 [PDF](https://arxiv.org/pdf/2601.21081), [HTML](https://arxiv.org/abs/2601.21081)
+### Authors
+Yu Huo,Siyu Zhang,Kun Zeng,Haoyue Liu,Owen Lee,Junlin Chen,Yuquan Lu,Yifu Guo,Yaodong Liang,Xiaoying Tang
+### Background
+多模态模型在文本到图像生成方面的表现已十分接近现实，但在处理组合结构限制方面依然脆弱，尤其是在生成数量关系、属性绑定和部件级关系方面。这限制了模型在结构完整性方面的表现。
+### Innovation
+本文提出了Shape-of-Thought (SoT)，这是一种视觉CoT框架，能够在推理时不依赖外部引擎的情况下实现渐进式形状组装。SoT训练了一个统一的多模态自回归模型，生成交错的文本计划和渲染中间状态，帮助模型捕获形状组装逻辑，而无需生成显式的几何表示。为此，作者还引入了SoT-26K数据集，该数据集从基于部件的CAD层次结构中提取了具有实时性的装配跟踪，以及T2S-CompBench基准用于评估结构完整性和跟踪忠实度。通过SoT-26K微调实现了88.4%的组件数量关系和84.8%的结构拓扑，优于仅基于文本的基线大约20%。
+### Conclusion
+SoT 开创了透明且过程监督的组合生成新范式。相关代码可在<该项信息需要通过链接提供，未在原文给出>获取，SoT-26K数据集将在接受后发布。
+## 30. `cs.CV` - 遥感图像中的双向跨感知在开放词汇语义分割中的应用 [PDF](https://arxiv.org/pdf/2601.21159), [HTML](https://arxiv.org/abs/2601.21159)
+### Authors
+Jianzheng Wang,Huan Ni
+### Background
+高分辨率遥感图像因其密集分布的土地覆盖对象和复杂的边界而表现出独特的特征，这对几何定位和语义预测提出了更高的要求。现有的基于CLIP和视觉基础模型（VFMs）的一次性注入口和浅处理策略的零样本开放词汇语义分割（OVSS）方法难以满足这些需求。
+### Innovation
+本文提出了一种空间正则化感知的双分支协作推理框架，称为SDCI，以解决该问题。SDCI引入了一个交叉模型注意力融合模块（CAF），通过彼此注入自注意力图来进行协作推理。此外，提出的双向跨图扩散细化（BCDR）模块通过迭代随机游走扩散增强双分支分割得分的可靠性。最后，引入了低级别超像素结构，并开发了一种基于凸优化的超像素协作预测机制以进一步细化对象边界。
+### Conclusion
+在多个遥感语义分割基准测试上进行的实验表明，本文的方法在性能上优于现有的方法。删除性和细致性的研究进一步证明，传统的基于对象的遥感图像分析方法利用超像素结构在深度学习框架内仍然有效。
+## 31. `cs.LG` - 深回剩残回声状态网络：探索未训练循环神经网络中的残差正交连接 [PDF](https://arxiv.org/pdf/2508.21172), [HTML](https://arxiv.org/abs/2508.21172)
+### Authors
+Matteo Pinna,Andrea Ceni,Claudio Gallicchio
+### Background
+回声状态网络（ESNs）是一种在回声计算（RC）框架内的未训练循环神经网络（RNNs），因其快速和高效的学习能力而受到欢迎。然而，传统ESNs在处理长期信息时常常遇到困难。本文背景即是针对这一问题，探讨如何提升网络的记忆能力和长时间建模能力。
+### Innovation
+本文提出了一种基于时间残差连接的深层未训练RNN，称为深残差回声状态网络（DeepResESNs）。通过引入层次的未训练残差递归层，显著提高了记忆容量和长时间建模能力。研究还考虑了不同正交配置的时间残差连接，包括随机生成和固定结构配置，并研究它们对网络动力学的影响。数学分析明确了确保DeepResESN动态稳定的必要和充分条件。
+### Conclusion
+在多种时间序列任务上的实验表明，提出的方法相比传统的浅层和深层回声计算网络具有优势。
+## 32. `cs.LG` - 鲁棒滤波注意力：自我注意力作为并行状态估计器 [PDF](https://arxiv.org/pdf/2509.04154), [HTML](https://arxiv.org/abs/2509.04154)
+### Authors
+Peter Racioppo
+### Background
+现有的自我注意力机制在处理长上下文时存在挑战，尤其是在保持时间和空间效率的同时。尽管位置编码（如RoPE）有助于保持旋转结构，但自我注意力机制在长上下文稳定性方面仍需改进。
+### Innovation
+提出了鲁棒滤波注意力（RFA），它将自我注意力机制重新表述为基于潜在的随机微分方程（SDE）先验的并行鲁棒滤波。RFA通过在自注意力权重上隐式建模耗散和扩散来实现长上下文的稳定性，同时保留了RoPE风格的旋转结构。通过在动力学和噪声上施加各向同性约束，RFA能够与标准注意力机制的O(N^2d)时间复杂度和O(N^2+Nd)内存复杂度保持一致。
+### Conclusion
+实验结果表明，不确定性感知的加权可能导致每种头专注于不同的滤波模式，从而提高时间一致性和跨不同上下文长度的外推能力。
+## 33. `cs.LG` - 为ECG基础模型衔接性能差距：一种后训练策略 [PDF](https://arxiv.org/pdf/2509.12991), [HTML](https://arxiv.org/abs/2509.12991)
+### Authors
+Ya Zhou,Yujie Yang,Xiaohan Fan,Wei Zhao
+### Background
+ECG基础模型由于其在各种任务上的适应性越来越受欢迎，但它们的临床应用往往受到与特定任务模型相比的性能差距的限制，即使经过大型ECG数据集的预训练和目标数据的微调。这种限制可能是由于缺乏有效的后训练策略。
+### Innovation
+提出了一个简单但有效的方法来增强ECG基础模型的性能，在公共可用的基于Transformer的基础模型上评估了这种方法，实验结果显示，该方法在多个ECG任务中始终优于基线微调。在PTB-XL基准上，该方法提高了宏AUROC 0.7%-8.9%，宏AUPRC 23.3%-77.9%，在性能上也超过了包括任务特定和高级架构的多种最新SOTA方法。此外，还有一些关于改进训练动态和数据效率的分析，证明了用30%的数据训练优于使用100%数据训练的基线模型。消融实验强调了随机深度和预审线性推理的重要性。
+### Conclusion
+研究结果强调了后训练策略对改善ECG基础模型的潜力，并希望这项工作能够促进ECG领域基础模型的发展。
+## 34. `cs.LG` - MOMEMTO: 基于补丁的内存门模型在时间序列基础模型中的应用 [PDF](https://arxiv.org/pdf/2509.18751), [HTML](https://arxiv.org/abs/2509.18751)
+### Authors
+Samuel Yoon,Jongwon Kim,Juyoung Ha,Young Myoung Ko
+### Background
+近年来，基于重建的深度模型广泛应用于时序异常检测中，但随着模型容量和泛化能力的增强，这些模型容易过度泛化，常常能够准确重建未见过的异常。先前的工作尝试通过引入存储正常模式原型的内存架构来减轻这一问题，但这些方法存在训练成本高且尚未有效结合时间序列基础模型的问题。
+### Innovation
+本文提出了一种改进的时间序列基础模型MOMEMTO，通过引入基于补丁的内存模块来缓解过度泛化的问题。内存模块能够从多个领域捕捉具有代表性的正常模式，并通过多领域训练策略实现模型在多个数据集上的联合微调。MOMEMTO初始化内存项利用预训练编码器的潜在表示，并通过注意机制更新它们。
+### Conclusion
+我们在23个单一变量基准数据集上评估了该方法，实验结果表明，作为单一模型的MOMEMTO在AUC和VUS指标上优于基线方法，并且进一步提升了其基础TFM的性能，尤其是在少量样本学习的情景中。
+## 35. `cs.LG` - Guided Perturbation Sensitivity (GPS): 通过嵌入稳定性与单词重要性检测对抗文本 [PDF](https://arxiv.org/pdf/2508.11667), [HTML](https://arxiv.org/abs/2508.11667)
+### Authors
+Bryan E. Tuck,Rakesh M. Verma
+### Background
+对抗文本攻击始终是变压器模型中的一个顽固威胁。现有的防御方法通常是攻击特定的，或者需要昂贵的模型重新训练，这在攻击检测方面留下了一个缺口。因此，仍需要一种攻击无关的检测方法。
+### Innovation
+引入Guided Perturbation Sensitivity (GPS)，这是一种通过测量重要词语被掩蔽时嵌入表示的变化来识别对抗性示例的检测框架。GPS首先根据重要性启发式排名词语，然后评估掩蔽最关键的k个词时嵌入的敏感性，并使用BiLSTM检测器处理结果模式。实验结果表明，对抗性扰动的词语相比于自然重要词语，在掩蔽敏感性上表现出不成比例的高敏感性。在三个数据集、三种攻击类型和两种受害者模型上，GPS的检测精度超过85%，并且在与现有最先进的方法比较中显示出了竞争力，有时计算成本更低。使用归一化折现累积增益（NDCG）衡量扰动识别质量，结果表明基于梯度的排名显著优于注意力、混合和随机选择方法，词汇级攻击的识别质量与检测性能高度相关（ρ = 0.65）。GPS能够在不重新训练的情况下泛化到未见过的数据集、攻击和模型，为对抗文本检测提供了一种实用的解决方案。
+### Conclusion
+GPS能够在不重新训练的情况下适用于未见过的数据集、攻击和模型，提供了一种实用的对抗文本检测解决方案；通过验证，基于梯度的排名显著优于其他方法，并且与检测性能具有高度相关性。
+## 36. `cs.LG` - 残差池化记忆网络 [PDF](https://arxiv.org/pdf/2508.09925), [HTML](https://arxiv.org/abs/2508.09925)
+### Authors
+Matteo Pinna,Andrea Ceni,Claudio Gallicchio
+### Background
+论文介绍了在Reservoir Computing（RC）框架下的一种新的未训练递归神经网络（RNN）类，名为残差池化记忆网络（ResRMN）。该网络结合了一个线性记忆池和一个基于残差正交连接的非线性池，这些连接沿时间维度增强了输入的长期传播。通过线性稳定性分析研究了池状态的动力学，并探讨了不同的残差时间连接配置。
+### Innovation
+提出了一种新型的未训练RC模型，即ResRMN。该模型结合了一个线性的记忆池和一个基于残差正交连接的非线性池，提高了输入的长期传播能力。通过线性稳定性分析探讨了残差时间连接的不同配置。该方法在时间序列和像素级的1D分类任务上进行了实证评估。
+### Conclusion
+实验结果表明，所提出的方法在时间序列和像素级1D分类任务中优于其他传统RC模型。
+## 37. `cs.LG` - 可训练优化器 [PDF](https://arxiv.org/pdf/2508.01764), [HTML](https://arxiv.org/abs/2508.01764)
+### Authors
+Ruiqi Wang,Diego Klabjan
+### Background
+学习优化涉及利用可训练的优化策略，而不是依赖手动定义的完整梯度估计（如ADAM）。传统的优化策略通常需要手动调整参数以获得理想的优化效果，而本文探讨了一种新的框架，该框架能够同时训练完整的梯度估计器和模型的可训练权重。
+### Innovation
+提出了一种伪线性TO（可训练优化器），它是完整梯度的一种线性近似，可以匹配SGD的收敛速度，同时有效减少方差。此外，为了进一步提高计算效率，引入了两种简化版的伪线性TO。实验结果表明，在强凸和非凸设置下，TO方法比基准算法（如ADAM）更快，并且在微调大模型时表现尤为明显。
+### Conclusion
+本文通过提出伪线性TO和其简化版本，提供了一种高效且可训练的优化器，适用于不同的优化场景，实验结果验证了其优越的性能。
+## 38. `cs.LG` - 理解大型语言模型后训练结构变化 [PDF](https://arxiv.org/pdf/2509.17866), [HTML](https://arxiv.org/abs/2509.17866)
+### Authors
+Xinyu He,Xianghui Cao
+### Background
+后训练对大型语言模型（LLMs）的行为产生了根本性的影响，但其对内部参数空间的影响仍不太清楚。本文系统地对预训练LLMs的主要线性层的奇异值分解（SVD）进行了分析，重点关注两种广泛采用的后训练方法：指令调优和长链思考（Long-CoT）蒸馏。
+### Innovation
+研究揭示了两种意想不到且稳健的结构变化：(1) 层次之间奇异值的几乎均匀几何缩放；(2) 对每个矩阵的左右奇异向量应用高度一致的正交变换。基于这些发现，提出了一个简单而有效的框架来描述LLMs中参数的协调动态，阐明了后训练本质上依赖于预训练发展的基础能力。进一步的实验表明，奇异值缩放支撑了后训练的温度控制调节机制，而奇异向量的协调旋转编码了基本语义对齐。
+### Conclusion
+结果挑战了大型模型参数空间通常被视为黑盒子的认知，揭示了参数在训练过程中演化过程中的第一条明确规律，并为更深入研究模型参数变化提供了新的视角。
+## 39. `cs.LG` - 延迟动量聚合：在部分参与下的高效抗拜占庭联邦学习 [PDF](https://arxiv.org/pdf/2509.02970), [HTML](https://arxiv.org/abs/2509.02970)
+### Authors
+Kaoru Otsuka,Yuki Takezawa,Makoto Yamada
+### Background
+在大规模联邦学习中，部分参与是必不可少的，但现有的抗拜占庭方法通常假定所有客户端都参与。在部分参与的场景中，大多数被采样的客户端可能是拜占庭客户端，一旦拜占庭客户端占据主导地位，现有方法就会立刻失效。
+### Innovation
+我们提出了延迟动量聚合的原则，该原则允许中央服务器结合未采样客户端缓存的动量和已采样客户端的新鲜动量进行聚合。这确保了从服务器的角度来看，拜占庭客户端始终保持在少数，即使它们主导了采样集。我们据此开发了优化器 DeMoA，并分析了 DeMoA 的收敛速率，证明了在部分参与条件下 DeMoA 具有抗拜占庭性。实验表明，在只有10%的部分参与率和20%拜占庭比例的情况下，DeMoA 的准确度仍然最高，而现有方法在此条件下会失败。
+### Conclusion
+DeMoA 在部分参与条件下表现出对拜占庭攻击的鲁棒性，并且在存在高比例拜占庭客户端时仍能实现最佳准确度。
+## 40. `cs.LG` - 在线表示学习与强化学习的Stackelberg耦合 [PDF](https://arxiv.org/pdf/2508.07452), [HTML](https://arxiv.org/abs/2508.07452)
+### Authors
+Fernando Martinez,Tao Li,Yingdong Lu,Juntao Chen
+### Background
+深Q学习在单一网络中联合学习表示和价值，这促进了特征和价值估计之间的共适应。然而，这种设计导致了表示和价值学习之间的耦合，使得表示必须不断适应非稳定的值目标，而价值估计依赖这些不断变化的表示。这种耦合进一步加剧了自助目标高方差的问题，导致了在离策略方法中价值估计的偏差。
+### Innovation
+提出了Stackelberg Coupled Representation and Reinforcement Learning（SCORER）框架，将表示学习和Q学习视为一个分层博弈中的两个策略代理。Q函数扮演领导者角色，按照更新频率较低的策略进行调整，而感知网络（编码器）作为跟随者，按照更高的频率进行调整，以学习使贝尔曼误差方差最小化的表示。这种分工确保了Q函数最小化均方贝尔曼误差（MSBE），感知网络最小化其方差，从而减少偏差。通过不对称更新，这种方法保证了稳定的共适应，不同于单一网络解决方案中同时参数更新的不稳定性。
+### Conclusion
+实验证明，.stackelberg耦合方法在dqn及其变体上的改进源自算法洞察而不依赖模型复杂性。所提出的scorer框架导致了一个双层优化问题，该问题通过二阶段算法得到近似解，创建了两个玩家之间的不对称学习动态。
