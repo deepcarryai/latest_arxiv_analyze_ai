@@ -1,0 +1,183 @@
+# 20260215
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - 针对多模态LLM-as-a-judge的双层提示优化 [PDF](https://arxiv.org/pdf/2602.11340), [HTML](https://arxiv.org/abs/2602.11340)
+### Authors
+Bo Pan,Xuan Kan,Kaitai Zhang,Yan Yan,Shunwen Tan,Zihao He,Zixin Ding,Junjie Wu,Liang Zhao
+### Background
+大型语言模型（LLMs）被广泛应用于评估AI生成的内容。尽管LLM取得了成功，但将其评估与人类判断对齐仍然具有挑战性。尽管监督微调可以提高对齐，但这种方法成本高且不灵活，需要为每个任务或数据集重新训练。最近的自动提示优化（APO）方法提供了一种更高效的替代方案，但这些方法主要针对纯文本评估，尚未在多模态环境中得到充分探索。其中一次主要瓶颈是多模态模型因上下文窗口限制只能处理有限数量的视觉示例，这妨碍了有效的提示改进实验。
+### Innovation
+本文提出了一个双层提示优化框架BLPO，该框架将图像转换为文本表示，同时保留评估相关的视觉线索。双层优化方法在有限的上下文预算下优化法官提示和I2T（图像到文本）提示以保持保真度。
+### Conclusion
+实验在四个数据集和三种LLM法官上证明了本方法的有效性。
+## 2. `cs.AI` - Voxtral Realtime [PDF](https://arxiv.org/pdf/2602.11298), [HTML](https://arxiv.org/abs/2602.11298)
+### Authors
+Alexander H. Liu,Andy Ehrenberg,Andy Lo,Chen-Yo Sun,Guillaume Lample,Jean-Malo Delignon,Khyathi Raghavi Chandu,Patrick von Platen,Pavankumar Reddy Muddireddy,Rohin Arora,Sanchit Gandhi,Sandeep Subramanian,Soham Ghosh,Srijan Mishra,Abhinav Rastogi,Alan Jeffares,Albert Jiang,Alexandre Sablayrolles,Amélie Héliou,Andrew Bai,Angele Lenglemetz,Anmol Agarwal,Anton Eliseev,Antonia Calvi,Arjun Majumdar,Baptiste Bout,Baptiste Rozière,Baudouin De Monicault,Benjamin Tibi,Clémence Lanfranchi,Connor Chen,Corentin Barreau,Corentin Sautier,Cyprien Courtot,Darius Dabert,Diego de las Casas,Elliot Chane-Sane,Enguerrand Paquin,Faruk Ahmed,Federico Baldassarre,Gabrielle Berrada,Gaëtan Ecrepont,Gauthier Guinet,Genevieve Hayes,Georgii Novikov,Giada Pistilli,Guillaume Martin,Gunjan Dhanuka,Gunshi Gupta,Han Zhou,Indraneel Mukherjee,Irene Zhang,Jaeyoung Kim,Jan Ludziejewski,Jason Rute,Joachim Studnia,John Harvill,Jonas Amar,Josselin Somerville Roberts,Julien Tauran,Karmesh Yadav,Kartik Khandelwal,Kush Jain,Laurence Aitchison,Léonard Blier,Lingxiao Zhao,Louis Martin,Lucile Saulnier,Luyu Gao,Maarten Buyl,Manan Sharma,Margaret Jennings,Marie Pellat,Mark Prins,Mathieu Poirée,Mathilde Guillaumin,Matthieu Dinot,Matthieu Futeral,Maxime Darrin,Maximilian Augustin,Mert Unsal,Mia Chiquier,Nathan Grinsztajn,Neha Gupta,Olivier Bousquet,Olivier Duchenne,Patricia Wang,Paul Jacob,Paul Wambergue,Paula Kurylowicz,Philomène Chagniot,Pierre Stock,Piotr Miłoś,Prateek Gupta,Pravesh Agrawal,Quentin Torroba,Ram Ramrakhya,Rishi Shah,Romain Sauvestre,Roman Soletskyi
+### Background
+目前的自动语音识别(ASR)模型通常是在脱机环境下运行的，虽然性能很好，但存在延迟问题。传统的ASR模型通过分块或滑动窗口的方法来适应在线流媒体场景，这种方法虽然减少了延迟，但并没有解决模型性能下降的问题。本文介绍了一种名为Voxtral Realtime的模型，实现了在亚秒级延迟下匹配脱机转写质量的实时自动语音识别模型。
+### Innovation
+Voxtral Realtime是首个完全为流媒体场景训练的模型，具有明确的音频和文本流的对齐。它基于延时流建模框架，引入了一种新型因果音频编码器和Ada RMS-Norm，以提高延迟条件下的性能。该模型在跨13种语言的大规模数据集上进行了预训练。在480ms延迟下，Voxtral Realtime的性能达到了与广泛部署的脱机转写系统Whisper相当水平。
+### Conclusion
+Voxtral Realtime实现了在保持与脱机系统相当的转写质量的同时，达到亚秒级延迟。此外，该模型在Apache 2.0许可下发布，为其他研究提供了便利。
+## 3. `cs.AI` - 推动进取型代理帕累托前沿的行为代理优化 [PDF](https://arxiv.org/pdf/2602.11351), [HTML](https://arxiv.org/abs/2602.11351)
+### Authors
+Yihang Yao,Zhepeng Cen,Haohong Lin,Shiqi Liu,Zuxin Liu,Jiacheng Zhu,Zhang-Wei Hong,Laixi Shi,Ding Zhao
+### Background
+大型语言模型（LLM）代理旨在主动规划、查询并跨越多个回合进行互动，从而在多回合场景中高效完成任务，超越简单的被动指令遵循。现有的代理强化学习（RL）方法已经在多回合交互中表现出潜力，但现有的管道在任务性能与用户参与度之间存在关键平衡挑战，被动的代理无法高效适应用户的意图，而过度依赖人类反馈则降低了他们的满意度。
+### Innovation
+本文提出了BAO，这是一种结合行为增强和行为正则化的代理RL框架，增强代理的主动推理和信息收集能力，并抑制低效或冗余的交互，使代理行为与用户期望相一致。BAO在多个任务上的评估表明，它显著优于现有的进取型代理RL基准，并在复杂多回合场景中实现与商业LLM代理可比甚至更优的表现，突显了其在训练符合用户期望的进取型代理方面的有效性。
+### Conclusion
+BAO在多个任务上表现出色，不仅在进取型和用户对齐的LLM代理方面优于现有基准，而且还能够适应复杂多回合场景，展示了其在代理强化学习中的有效性，为真实世界的应用提供了突破性的方法。
+## 4. `cs.AI` - 关于决策值映射和表征依赖性 [PDF](https://arxiv.org/pdf/2602.11295), [HTML](https://arxiv.org/abs/2602.11295)
+### Authors
+Gil Raitses
+### Background
+不同的数据表示方式应用相同的计算引擎，可能会产生不同的离散结果。一些表示保留了结果，而其他则完全改变了结果。决策值映射用来记录哪些表示保留了结果，哪些改变了结果，关联每个指定表示家族的成员与它产生的离散结果。这篇文章旨在正式定义决策值映射，并描述一种名为DecisionDB的基础设施，它通过内容和存储在写入一次形式中的物理对象的标识符进行记录、重放和审计这些关系。确定性重放可以从存储的物理对象中精确恢复每个记录的决策标识符，三个标识字段全部匹配其持久化的值。
+### Innovation
+文章提出了决策值映射的概念，并开发了DecisionDB基础设施。DecisionDB通过内容和存储在写入一次形式中的物理对象的标识符，记录、重放和审计这些关系。此外，文章还定义了表示空间的持久性和边界分区，并将决策重用于可通过机械检查的条件。
+### Conclusion
+文章通过正式化决策值映射，以及通过DecisionDB基础设施的应用来完成表示依赖性的表征。同时，引入了代表空间的分区方法和决策重用的机械可验证性条件。
+## 5. `cs.AI` - PBSAI治理生态系统：为企业AI领地提供多代理AI参考架构 [PDF](https://arxiv.org/pdf/2602.11301), [HTML](https://arxiv.org/abs/2602.11301)
+### Authors
+John M. Willis
+### Background
+企业和大型企业的生产中正快速部署大型语言模型、检索增强生成管道和工具使用代理，这些系统通常部署在共享高性能计算集群和云加速平台上，同时也支持防御性分析。现有的治理和安全框架，如NIST人工智能风险管理框架和系统安全工程指南，虽然描述了原则和风险管理功能，但并未提供能够应对多代理人工智能赋能网络安全威胁的实施架构。
+### Innovation
+介绍了Practitioners Blueprint for Secure AI (PBSAI)治理体系，这是一种多代理参考架构，用于确保企业的AI领地的安全。PBSAI将职责组织成一个十二领域分类法，并定义了代理家庭，这些家庭通过共享上下文包和结构化的输出合同在工具和政策之间进行中介。该架构假设企业具备基础的安全能力，并嵌入了关键的系统安全技术，如分析监控、协同防御和自适应响应。此外，通过一个轻量级的形式化模型清晰定义了代理、上下文包和生态系统级别的不变属性，确保了各领域之间的可追溯性、来源和人工在环的保证。
+### Conclusion
+PBSAI被提议作为完全结构化、基于证据的基础平台，推动开放生态系统的发展并为进一步的实证验证奠定基础。研究结果还展示了与NIST人工智能风险管理框架各功能的契合度，并详细展示了其在企事业单位的安全运营中心（SOC）和大规模防御环境中的应用实例。
+## 6. `cs.AI` - AgentNoiseBench: 在嘈杂条件下测试工具使用的大语言模型代理的稳健性 [PDF](https://arxiv.org/pdf/2602.11348), [HTML](https://arxiv.org/abs/2602.11348)
+### Authors
+Ruipeng Wang,Yuxin Chen,Yukai Wang,Chang Wu,Junfeng Fang,Xiaodong Cai,Qi Gu,Hui Su,An Zhang,Xiang Wang,Xunliang Cai,Tat-Seng Chua
+### Background
+近年来，大型语言模型的进步使得基于LLM的代理在多种基准测试中表现出色。然而，在实际部署中，它们的表现往往不如基准设定的情况，尤其是在复杂和不完美的环境中。这种差距主要源于现有的训练和评估范式通常基于理想化的假设，忽略了真实互动中存在的固有的随机性和噪音。
+### Innovation
+为了弥合这一差距，我们引入了AgentNoiseBench，一个系统评估代理模型在嘈杂环境下的稳健性的框架。我们首先深入分析了现实场景中的偏差和不确定性，并将环境噪音分为两类：用户噪音和工具噪音。基于这一分析，我们开发了一个自动化管道，用于在不破坏任务求解性的情况下注入可控噪音到现有的代理中心基准测试中。借助这一管道，我们对来自不同架构和参数规模的广泛模型进行了广泛的评估。结果显示，不同噪音条件下的性能变化一致，突显了当前代理模型对真实环境扰动的高度敏感性。
+### Conclusion
+我们的研究表明，基于当前的模型对现实环境中的噪声高度敏感。因此，我们需要改进现有的训练和评估策略，以提高其在不完美环境中的鲁棒性。
+## 7. `cs.AI` - ReplicatorBench: Benchmarking LLM Agents for Replicability in Social and Behavioral Sciences [PDF](https://arxiv.org/pdf/2602.11354), [HTML](https://arxiv.org/abs/2602.11354)
+### Authors
+Bang Nguyen,Dominik Soós,Qian Ma,Rochana R. Obadage,Zack Ranjan,Sai Koneru,Timothy M. Errington,Shakhlo Nematova,Sarah Rajtmajer,Jian Wu,Meng Jiang
+### Background
+现有文献中，人工智能代理在科技论文自动化评估方面的应用逐渐增多。目前的基准测试主要关注这一任务的计算方面，即测试代理在获得代码和数据的情况下重新生成或重现研究结果的能力。虽然这种设置是基础性的，但它未能捕捉到属于复制与重现之间所存在的新数据可用性不一致的现象，并且缺乏通过仅关注可重现的论文来制约真实世界中代理鉴别不可重现研究的能力。大多数基准测试仅评估研究结果，而不是复制过程。上述缺陷促使作者提出了ReplicatorBench，这是一种端到端的基准测试，涵盖了社会和行为科学中经人类验证的可重复和不可重复的研究声明，用于评估代理在研究复制过程中的能力。该基准测试包含三个阶段：数据提取和检索、计算实验的设计和执行，以及结果的解释。
+### Innovation
+ReplicatorBench作为一个端到端的基准测试，提出了全新的评估框架，它包含了社会和行为科学中经人类验证的可重复和不可重复的研究声明。与现有基准不同的是，ReplicatorBench不仅考虑了研究结果的再现性，更重要的是，它还考虑了研究过程的再现性，包括数据资源的获取、计算实验的设计和执行，以及结果的解释。作者开发了ReplicatorAgent，这是一种包含必要工具（如网络搜索和与沙盒环境的迭代交互）的代理框架，可以根据不同的开源大型语言模型（LLMs）、编程语言选择和代码访问级别进行评估。这一框架旨在设置一种基准，量化当前人工智能代理在面对真实世界研究复制问题时的能力。
+### Conclusion
+研究发现，虽然现有的LLM代理能够有效地设计和执行计算实验，但在获取资源，尤其是新数据方面存在困难。所有代码和数据已公开。这项研究为评估和改进AI代理在研究复制中的实际能力提供了新的基准。
+## 8. `cs.AI` - Latent Generative Solvers for Generalizable Long-Term Physics Simulation [PDF](https://arxiv.org/pdf/2602.11229), [HTML](https://arxiv.org/abs/2602.11229)
+### Authors
+Zituo Chen,Haixu Wu,Sili Deng
+### Background
+该研究探讨了在不同偏微分方程（PDE）系统中进行长期替代模拟的方法。背景在于当前许多基于神经网络的偏微分方程求解模型在处理跨系统长期稳定预测时表现不佳，存在长期游离和预测漂移问题。
+### Innovation
+该研究提出了Latent Generative Solvers（LGS），这是一种两阶段框架，首先通过预训练的变分自编码器（VAE）将不同PDE状态映射到共享的潜在物理空间；其次，使用通过流匹配训练的Transformer学习潜在动态。关键机制是不确定性旋钮，在训练和推理期间扰动潜在输入，使求解器能够校正游离轨迹并稳定自回归预测。此外，研究还利用流激励更新系统描述符（上下文），从而改善长期稳定性。
+### Conclusion
+LGS在短期预测上可以与强大的确定性神经算子基线媲美，但在长期预测上显著减少了轨迹漂移。在潜在空间中进行学习加上高效的架构选择可以将其与非生成基线的FLOPs降低多达70倍，使预训练更高效且可扩展，并展示了在有限的微调预算下对离分布的256^2科莫哥洛夫流数据集的有效适应。总体而言，LGS提供了一种实用途径，以实现可概括的、具有不确定性意识的神经PDE求解器，这些求解器在长期预测和下游科学工作流程中更具可靠性。
+## 9. `cs.AI` - 拆解数据注释中的主观性和'事实'幻象 [PDF](https://arxiv.org/pdf/2602.11318), [HTML](https://arxiv.org/abs/2602.11318)
+### Authors
+Sheza Munir,Benjamin Mah,Krisha Kalsi,Shivani Kapania,Julian Posada,Edith Law,Ding Wang,Syed Ishtiaque Ahmed
+### Background
+本文研究了机器学习中的“真实标签”概念及其缺陷。尽管这些标签被用来训练和评估模型，但这些标签的基础假定忽视了人类之间的分歧，将其视为技术噪声，而非重要的社会技术信号。论文通过系统文献审查，分析了2020年至2025年间在七项顶级会议上发表的研究（ACL, AIES, CHI, CSCW, EAAMO, FAccT, NeurIPS），研究了数据注释实践中导致“共识陷阱”的机制。
+### Innovation
+1. 研究揭示了位置可读性系统性失效与近来向人类为验证者模型转移的架构转变相结合，导致深处的锚定偏见，并实际将人类声音从循环中移除。2. 指出地理霸权强加了西方规范作为普遍基准，这种规范常常通过脆弱的数据工作者为了避免经济惩罚而优先考虑请求数目的合规性来进行执行。3. 批判了“嘈杂传感器”谬误，即统计模型将文化多元性误诊为随机误差，并呼吁重新将分歧视为构建包容性文化模型的重要高保真信号。
+### Conclusion
+通过多元注释基础设施的路线图，从发现单一“正确答案”的目标转向映射人类经验的多样性来解决这些系统性紧张关系。
+## 10. `cs.AI` - 无需代码解释人工智能：一项解释性人工智能用户研究 [PDF](https://arxiv.org/pdf/2602.11159), [HTML](https://arxiv.org/abs/2602.11159)
+### Authors
+Natalia Abarca,Andrés Carvallo,Claudia López Moncada,Felipe Bravo-Marquez
+### Background
+随着机器学习（ML）在敏感领域如医疗、金融和公共政策中的使用增加，人们对自动化决策的透明性表示担忧。可解释人工智能（XAI）通过阐明模型生成预测的过程来解决这一问题，但大多数方法需要技术专长，限制了它们对新手的价值。这一点在无代码ML平台中尤其重要，因为这些平台旨在普及人工智能，但很少包含解释性功能。
+### Innovation
+本研究在开源无代码ML平台DashAI中提出了一个人性化中心的XAI模块。该模块将部分依赖图（PDP）、置换特征重要性（PFI）和KernelSHAP三种互补技术整合到DashAI的流程中，用于表格分类。通过一项用户研究（N=20，包括ML新手和专家），研究评估了模块的易用性和解释的影响。
+### Conclusion
+实验结果表明：(i) 所有解释任务的成功率为80%以上；(ii) 新手认为解释有用、准确且可信，而专家则对解释的充分性和完整性表示担忧；(iii) 解释使参与者对未来预测和自动化技术的信任度有所提升，新手的信任度高于专家。这项研究突显了XAI在无代码ML中的关键挑战，即使解释对新手易于理解同时对专家详细有效。
+## 11. `cs.CL` - 通过专家(不)激活引导MoE大型语言模型 [PDF](https://arxiv.org/pdf/2509.09660), [HTML](https://arxiv.org/abs/2509.09660)
+### Authors
+Mohsen Fayyaz,Ali Modarressi,Hanieh Deilamsalehy,Franck Dernoncourt,Ryan Rossi,Trung Bui,Hinrich Schütze,Nanyun Peng
+### Background
+MoE模型在大型语言模型中将每个令牌通过一组专门化的前馈网络（FFN），即专家。现有的研究通过检测和控制行为相关的专家来改进这些模型的性能。
+### Innovation
+SteerMoE框架通过检测并控制行为相关的专家，实现对模型行为的调控。具体而言，通过对对比具有相反行为的输入时哪些专家被激活频率更高的方法来检测关键专家。在推理中选择性地激活或不激活这样的专家，无需微调模型，即可控制模型的忠实度和安全性。
+### Conclusion
+SteerMoE提高了多达27%的忠实度和20%的安全性，而错误的行为导向则降低了安全性，并且当结合现有方法时，完全绕过了安全护栏。总体而言，SteerMoE提供了一种轻量级、有效且广泛应用的测试时控制，并揭示了MoE LLMs的独特漏洞。
+## 12. `cs.CL` - 评估罗马尼亚医疗问答的大规模基准 [PDF](https://arxiv.org/pdf/2508.16390), [HTML](https://arxiv.org/abs/2508.16390)
+### Authors
+Ana-Cristina Rogoz,Radu Tudor Ionescu,Alexandra-Valentina Anghel,Ionut-Lucian Antone-Iordache,Simona Coniac,Andreea Iuliana Ionescu
+### Background
+在罗马尼亚，目前缺乏针对医疗领域的高质量问答数据集。本文通过构建包含105,880个QA配对的大规模高质量数据集来填补这一空白，旨在辅助大型语言模型（LLMs）的有效评估。
+### Innovation
+首次提出了MedQARo，这是一个适用于罗马尼亚语言的大型医疗QA基准。该基准旨在全面评估最新的LLMs，特别是针对医疗信息的关键词提取和推理能力，通过引入两种不同类型的测试集合（医学领域内和跨领域/跨中心），以精确评估模型的泛化能力。
+### Conclusion
+本研究展示了在MedQARo上预训练模型的不足，突出了针对特定领域的微调和特定语言的微调对于可靠罗马尼亚临床问答的重要性。微调模型显著优于零样本模型，表明在医疗领域的大规模数据集上进行有效的知识迁移是必要的。
+## 13. `cs.CL` - 如何从英语单词中观察到一个深度神经网络对词重音的审视？ [PDF](https://arxiv.org/pdf/2508.07229), [HTML](https://arxiv.org/abs/2508.07229)
+### Authors
+Itai Allouche,Itay Asael,Rotem Rousso,Vered Dassa,Ann Bradlow,Seung-Eun Kim,Matthew Goldrick,Joseph Keshet
+### Background
+尽管神经网络在语音处理方面取得了成功，但它们通常作为黑盒子运行，促使人们质疑它们决策背后的依据，以及如何对其进行解释。本文探讨了这一问题在词重音语境中的情况。研究者从朗读和自发口语中自动构建了英语双音节词的数据集，并训练了多个卷积神经网络（CNN）架构以预测双音节词的重音位置，其准确率最高达到92%。
+### Innovation
+提出了层次相关传播（LRP）方法，这是一种神经网络可解释性分析技术，揭示了对于未见的最小对比词对（如PROtest vs. proTEST），网络预测最强烈地受抑扬格（重音在前面）和非抑扬格（重音在后面）音节中信息的影响，尤其是在重读元音的光谱特性方面。此外，特征特异性相关性分析表明，表现最佳的分类器强烈受重读元音第一和第二共振峰的影响，并有证据表明其声调和第三共振峰也可能做出贡献。
+### Conclusion
+这些结果展示了深度学习从自然数据中获取重音分布线索的能力，这扩展了基于高度受控刺激的传统语音生理学研究。
+## 14. `cs.CL` - 学习路由：一种基于规则驱动的混合源检索增强生成代理框架 [PDF](https://arxiv.org/pdf/2510.02388), [HTML](https://arxiv.org/abs/2510.02388)
+### Authors
+Haoyue Bai,Haoyu Wang,Shengyu Chen,Zhengzhang Chen,Lu-An Tang,Wei Cheng,Haifeng Chen,Yanjie Fu
+### Background
+大型语言模型（LLMs）在通用问答（QA）方面表现出色，但在需要准确和及时信息的特定领域场景中往往表现不佳。检索增强生成（RAG）通过将外部知识注入LLMs来解决这一限制，但现有系统主要依赖不结构化的文档，而忽略关系数据库的存在。数据库提供精确且易于查询的事实信息，在金融、医疗保健和科学研究等领域作为不可或缺的基础设施。论文指出，数据库和文档在查询过程中提供了互补的优势，但简单地将这两个源混合在一起并没有带来一致的准确性提升。最合适的来源对于每个查询来说至关重要，并且查询类型与检索路径之间存在一致性规律，可以通过系统规则来指导路由决策。
+### Innovation
+论文提出了一个基于规则驱动的路由框架。一个路由代理根据显式的规则评估候选增强路径，并选择最适合的一个；一个规则制定专家代理随着时间的推移调整规则，使其能够使用问答反馈进行改进，从而保持方法的适应性；一个路径级别的元缓存重用过去的路由决策，以减少语义相似查询的延迟和成本。在三个QA基准测试上的实验表明，该框架在保持适度计算成本的同时，始终优于静态策略和基于学习的路由基线，实现了更高的准确性。
+### Conclusion
+该框架通过利用数据库和文档的互补优势，以及通过规则驱动的方法优化了路由决策，显著提高了RAG系统的性能，并且在保持适度计算成本的前提下实现了更高的准确性。
+## 15. `cs.CL` - CoSpaDi：通过校准导向稀疏字典学习压缩大型语言模型 [PDF](https://arxiv.org/pdf/2509.22075), [HTML](https://arxiv.org/abs/2509.22075)
+### Authors
+Denis Makhov,Dmitriy Shopkhoev,Magauiya Zhussip,Ammar Ali,Stamatios Lefkimmiatis
+### Background
+大型语言模型（LLMs）的后训练压缩通常依赖于低秩权重近似，通过将权重矩阵的每一列表示在一个共享的低维子空间中。然而，这种策略虽然计算效率高，但背后的约束对于异构投影权重可能过于严格，可能导致不必要的准确度损失。
+### Innovation
+提出了CoSpaDi（Compression via Sparse Dictionary Learning，基于稀疏字典学习的压缩）框架，该框架通过结构化稀疏分解替代低秩因子分解，使得每一权重矩阵表示为一个稠密字典乘以列稀疏系数矩阵。这种方法形成了一种子空间模型：权重矩阵的每一列通过不同子集的字典原子的线性组合表示，提高表达能力同时保持参数预算固定。为了校准导向优化，使用小型校准集优化因子分解，以最小化层输出的功能重建误差，而不是权重空间误差。激活衍生的Gram正交化将此数据感知目标转化为标准的字典学习问题，支持层内压缩和跨层稀疏字典共享。
+### Conclusion
+CoSpaDi在20-40%压缩率下，相对于基于SVD的最新基准和强结构剪枝基准，改进了准确度-压缩和困惑度-压缩之间的权衡。结构化的稀疏性使稀疏-密集计算成为可能，并与稀疏系数的后训练量化相结合。
+## 16. `cs.CL` - GOLD PANNING: Strategic Context Shuffling for Needle-in-Haystack Reasoning [PDF](https://arxiv.org/pdf/2510.09770), [HTML](https://arxiv.org/abs/2510.09770)
+### Authors
+Adam Byerly,Daniel Khashabi
+### Background
+大型语言模型（LLMs）在处理长上下文中的‘针扎乱草堆’问题时表现出显著的位置偏倚，倾向于优先处理信息的位置而非其相关性。当前缓解方法依赖白盒访问，但对于许多最先进的模型来说，这实际上是不可能的。该研究旨在提出一种黑盒贝叶斯框架GOLD PANNING，通过重新排序文档和更新文档相关性的信念，实现模型推理时的主动搜索。
+### Innovation
+GOLD PANNING框架通过(i)信号锚定重新排序文档，集中高置信度项目在诊断性较强的位置，(ii)根据模型输出更新文档相关性的信念，实现了诊断性迭代分配。这种框架能够在对数时间内从N个文档中识别目标，确保多文档下的可扩展性。相较于传统的不确定性减少型主动学习，GOLD PANNING利用信号锚定策略保留微弱线索，从而证明位置偏倚可以作为一种控制工具。
+### Conclusion
+GOLD PANNING在长上下文检索和长时间答案查询方面取得了与Permutation Self-Consistency相当的识别目标效果，但在查询次数上减少了30-65%，并且在校准不匹配的情况下仍保持有效。这些结果表明，内在模型偏倚不必是失败，而是可以作为控制工具使用。
+## 17. `cs.CL` - 鸡尾酒会基准：多模态数据集和比较评估结果 [PDF](https://arxiv.org/pdf/2510.23276), [HTML](https://arxiv.org/abs/2510.23276)
+### Authors
+Thai-Binh Nguyen,Katerina Zmolikova,Pingchuan Ma,Ngoc Quan Pham,Christian Fuegen,Alexander Waibel
+### Background
+本研究在第九届CHiME挑战中引入了多模态上下文感知识别（MCoRec）任务，解决了单房间环境中的背景噪音问题，特别是同时进行的对话重叠。该任务采用了音频、视觉和上下文提示来捕捉自然的多人群聊，这些群聊通常是未编写的随意聊天，导致对话片段高度碎片化，重叠率高达100%。传统的语音识别系统在仅使用音频的情况下失效，但结合视觉信息可以显著提高识别性能，充分展示了多模态识别的重要性。
+### Innovation
+研究首次提出了MCoRec任务，该任务要求系统同时从音频-视频记录中转录每个发言人的语音并将其归类到相应的对话中来回答“谁在何时说什么，以及与谁交谈”的问题。研究结果显示，仅仅使用音频的基准系统Word Error Rate超过了100%，而结合视觉信息之后可以显著提高识别率，最高可达50%的改进，这表明多模态融合的必要性和优势。
+### Conclusion
+本文介绍了MCoRec任务的动机，概述了数据收集过程，并报告了为MCoRec开发的基准系统。研究强调了结合多模态信息进行多人群对话识别的必要性和重要性，对未来的研究和系统开发具有重要指导意义。
+## 18. `cs.CL` - 语言模型是否迎合用户？一种语言趋同性的研究 [PDF](https://arxiv.org/pdf/2508.03276), [HTML](https://arxiv.org/abs/2508.03276)
+### Authors
+Terra Blevins,Susanne Schmalwieser,Benjamin Roth
+### Background
+虽然大型语言模型（LLMs）通常被认为在语言生成方面表现出色，但它们的语言使用方式与人类的相似程度仍然没有得到充分研究。本研究旨在测试模型是否能够表现出语言趋同性，即将人类语言使用的模式转化为他们预测和生成的语言。
+### Innovation
+研究通过系统性地比较模型对已有的对话完成与原始的人类回应进行跨16种语言模型、3种对话语料库以及多种语言风格特征的对比，揭示模型在对话风格上的趋同规律。研究发现了模型在媒介模式上表现出不同的趋同规律，指示了不同的模型参数设定会让模型以不同的方式趋同。
+### Conclusion
+研究结果表明，模型在对话风格上表现出强烈的趋同性，尽管这种趋同模式常常取决于特征的特定性，但不同的模型设定（如指令调整和大型模型）会表现出更弱的趋同性。研究假设这种行为背后的原因与人类和模型的趋同模式存在很大差异。
+## 19. `cs.CL` - Racka：在学术基础设施上高效适应匈牙利语的大规模语言模型 [PDF](https://arxiv.org/pdf/2601.01244), [HTML](https://arxiv.org/abs/2601.01244)
+### Authors
+Zsolt Csibi(2),Bence György Gortka(1),Natabara Gyöngyössy(2),Kornél Nagy(1),Dávid Márk Nemeskey(1),Martin Sallai(1),András Simonyi(2),András Márk Szekeres(1),Gábor Palkó(1) ((1) Department of Digital Humanities, Eötvös Loránd University (2) Department of Artificial Intelligence, Eötvös Loránd University)
+### Background
+该研究背景描述了轻量级持续预训练的语言模型Racka的设计初衷，目的是弥合匈牙利语等低资源语言与英语、德语等高资源语言之间的资源差距。Racka通过在A100 (40GB) 基础的HPC集群上进行参数优化的持续预训练，提高了学术基础设施上的应用效果。
+### Innovation
+主要创新包括使用参数高效持续预训练方法LoRA进行Qwen-3 4B模型的训练，该方法能够在带宽较低的节点间有效实施。此外，为了更好地匹配训练分布，团队调整了分词器，提高了匈牙利语的分词生产率，同时保持了在英语和德语上的竞争力。最后，采用特定数据集混合策略（44% 匈牙利语、24% 英语、21% 德语、11% 代码）进行持续预训练，以防止灾难性遗忘并保留高资源语言的能力。
+### Conclusion
+初步结果显示Racka在语言适应方面取得了温和但稳定的成果，表明该模型在特定背景下能够有效提升低资源语言能力，并且在高资源语言上仍然表现良好。
+## 20. `cs.CL` - 在粤语、日语和土耳其语上的现代大型语言模型评估：跨语言基准 [PDF](https://arxiv.org/pdf/2511.10664), [HTML](https://arxiv.org/abs/2511.10664)
+### Authors
+Chengxuan Xia,Qianye Wu,Hongbin Guan,Sixuan Tian,Yilun Hao,Xiaoyu Wu
+### Background
+大型语言模型（LLMs）已经在资源丰富的语言如英语中取得了显著成果，然而它们在低资源和形态丰富的语言中的效果仍然没有得到充分探索。这项研究提供了对七个最先进的LLMs（包括GPT-4o, GPT-4, Claude 3.5 Sonnet, LLaMA 3.1, Mistral Large 2, LLaMA-2 Chat 13B, 和 Mistral 7B Instruct）的全面评估，覆盖了粤语、日语和土耳其语三种语言的混合跨语言基准。这些语言因其独特的语言挑战和文化语境而变得特别有价值。
+### Innovation
+研究团队使用了新的跨语言基准测试，不仅涵盖了广泛的语言类型，而且包括多任务评估，如开放领域问答、文档摘要、英译X以及文化背景下的对话。评估方法结合了人工评价和自动化指标，从而能够进行全面而细致的模型性能评估。这种多样化的评估方法为大型语言模型在跨语言和低资源语言环境中的表现提供了深入的理解。
+### Conclusion
+研究结果显示，尽管大型且专有的模型（如GPT-4o和GPT-4）在跨语言任务上通常表现较好，但在文化细微差别理解和形态一般化方面仍存在显著差距。此外，尽管一些模型如Claude 3.5 Sonnet在知识和推理基准上表现出竞争性准确度，但所有模型在应对每种语言的独特语言挑战时都存在一定程度的困难。资源较少的开源模型在流畅性和准确性方面表现较差。研究团队提供了定量结果、定性错误分析，并讨论了提高更大文化意识和语言通用性的LLMs的发展意义。该基准和评估数据已经发布以促进可重复性和进一步的研究。
