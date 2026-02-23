@@ -1,0 +1,174 @@
+# 20260223
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - 简单基准与代码进化竞争 [PDF](https://arxiv.org/pdf/2602.16805), [HTML](https://arxiv.org/abs/2602.16805)
+### Authors
+Yonatan Gideoni,Sebastian Risi,Yarin Gal
+### Background
+代码进化是一系列技术，依赖于大型语言模型来搜索可能的计算机程序，通过演变或突变现有代码。许多提出的代码进化学术流程展示了令人印象深刻的性能，但通常没有与更简单的基准进行比较。
+### Innovation
+该研究测试了两种简单基准在三个领域（改进数学边界、设计代理支架和机器学习竞赛）中的表现，并发现简单基准在所有三个领域都能与更复杂的方法相匹配甚至超越其。研究还提出了减少评估随机性的更好方法，同时保持代码进化的经济可行性。
+### Conclusion
+对于数学边界问题，搜索空间和提示中的领域知识主要决定搜索的性能上限和效率，代码进化管道是次要因素。因此，找到改进边界的主要挑战是设计好的搜索空间，这是由领域专家完成的，而不是搜索过程本身。在设计代理支架时发现高变异性和小数据集导致选择次优支架，手写设计的多数投票支架表现最佳。提出了更严谨的代码进化途径并讨论了未来工作的方法和最佳实践。
+## 2. `cs.AI` - 一种基于顺序的方法在犹豫模糊元素评分中的应用 [PDF](https://arxiv.org/pdf/2602.16827), [HTML](https://arxiv.org/abs/2602.16827)
+### Authors
+Luis Merino,Gabriel Navarro,Carlos Salvatierra,Evangelina Santos
+### Background
+传统的犹豫模糊集评分方法往往缺乏形式化的序理论基础。该论文提出了一个统一的框架，其中每个评分是针对给定的序明确定义的。基于顺序的观点使评分机制更加灵活和连贯。该论文探讨了几种经典顺序在犹豫模糊元素上的应用，指出这些顺序不诱导代数结构。而在与对称顺序相关的评分中，该论文证明了这些评分满足评分函数的关键规范标准，包括对并集的强大单调性和Gärdenfors条件。
+### Innovation
+提出了基于序的犹豫模糊元素评分方法的统一框架。引入了控制集内结合最低可接受阈值比较犹豫模糊元素的支配函数类。提供了有限集上的两种具体支配函数实例，它们可用于构建典型的犹豫模糊集上的模糊偏好关系，并支持群体决策。
+### Conclusion
+该研究证明了所提方法的有效性和适用性，特别适用于犹豫模糊环境中基于控制集的群体决策。支配函数为犹豫模糊集间比较提供了新的工具。
+## 3. `cs.AI` - 面向大规模人类移动模拟的感知移动性缓存框架 [PDF](https://arxiv.org/pdf/2602.16727), [HTML](https://arxiv.org/abs/2602.16727)
+### Authors
+Hua Yan,Heng Tan,Yingxue Zhang,Yu Yang
+### Background
+大规模的人类移动模拟对城市规划、流行病学和交通分析等应用至关重要。尽管最近的研究尝试使用大型语言模型（LLMs）来模拟真实的人类移动行为，并通过结构化推理来实现，但高计算成本限制了其可扩展性。
+### Innovation
+我们设计了一种称为MobCache的移动感知缓存框架，该框架利用可重构的缓存来实现高效的大规模人类移动模拟。MobCache由两个主要组件组成：（1）推理组件，将每个推理步骤编码为潜在空间嵌入，并通过潜在空间评估器使推理步骤的重用和重新组合成为可能；（2）解码组件，采用轻量级解码器进行训练，该解码器受移动法则约束，将潜在空间中的推理链转换为自然语言，从而提高模拟效率同时保持与最先进的LLM方法相当的性能。
+### Conclusion
+实验表明，MobCache在多维度上显著提高了效率，同时保持了与最先进的LLM基方法相当的性能。
+## 4. `cs.AI` - 单态表示引发的语境性：自适应智能的信息论原理 [PDF](https://arxiv.org/pdf/2602.16716), [HTML](https://arxiv.org/abs/2602.16716)
+### Authors
+Song-Ju Kim
+### Background
+自适应系统在自然和人工智能中经常在多个上下文下重用固定内部状态空间，这受到内存、表示或物理资源的限制。这种单态重用的现象在古典概率表示中普遍存在，但其基本的表现性后果尚未被充分理解。
+### Innovation
+通过将上下文视为作用于共享内部状态的干预措施，该研究证明任何能够再现上下文结果统计数据的古典模型都必须面临不可还原的信息论成本：上下文依赖不能仅由内部状态传递。此外，非古典概率框架通过放松单一全局联合概率空间的假设，避免了这一障碍，而无需引入量子动力学或希尔伯特空间结构。研究结果将语境性识别为自适应智能的普遍表现性约束，与物理实现无关。
+### Conclusion
+该研究揭示了语境性作为自适应智能的普遍表现约束，独立于物理实现。同时，提出了一个最小的构造性示例，明确表示了这种成本的意义，并解释了非古典概率框架如何通过放松单一全局联合概率空间的假设来避免这一障碍。
+## 5. `cs.AI` - 节点学习：一种适应性、去中心化和协作的网络边缘AI框架 [PDF](https://arxiv.org/pdf/2602.16814), [HTML](https://arxiv.org/abs/2602.16814)
+### Authors
+Eiman Kanjo,Mustafa Aslanov
+### Background
+随着AI向边缘的扩展，中心化智能的成本和脆弱性不断增加。数据传输、延迟、能源消耗以及对大规模数据中心的依赖性在异构、移动和资源受限的环境中造成了难以扩展的瓶颈。
+### Innovation
+本文引入了节点学习，这是一种去中心化的学习范式，其中智能在个体边缘节点上存在并通过有选择的同伴交互扩展。节点连续从本地数据中学习，保持自己的模型状态，并在合作有益时仅机会性地交换学习的知识。学习通过重叠和扩散传播，而不是全球同步或中央聚合。
+### Conclusion
+节点学习并没有摒弃现有范式，而是将它们置于更广泛的去中心化视角中，统合了自主和合作行为，并适应了数据、硬件、目标和连接的异构性。本文发展了这一范式的概念基础，对比了其与现有去中心化方法的差异，并探讨了对通信、硬件、信任和管理的潜在影响。
+## 6. `cs.AI` - 当AI基准停滞：基准饱和的一项系统研究 [PDF](https://arxiv.org/pdf/2602.16763), [HTML](https://arxiv.org/abs/2602.16763)
+### Authors
+Mubashara Akhtar,Anka Reuel,Prajna Soni,Sanchit Ahuja,Pawan Sasanka Ammanamanchi,Ruchit Rawal,Vilém Zouhar,Srishti Yadav,Chenxi Whitehouse,Dayeon Ki,Jennifer Mickel,Leshem Choshen,Marek Šuppa,Jan Batzner,Jenny Chim,Jeba Sania,Yanan Long,Hossein A. Rahmani,Christina Knight,Yiyang Nan,Jyoutir Raj,Yu Fan,Shubham Singh,Subramanyam Sahoo,Eliya Habba,Usman Gohar,Siddhesh Pawar,Robert Scholz,Arjun Subramonian,Jingwei Ni,Mykel Kochenderfer,Sanmi Koyejo,Mrinmaya Sachan,Stella Biderman,Zeerak Talat,Avijit Ghosh,Irene Solaiman
+### Background
+AI基准测试在衡量模型开发进度和指导部署决策方面起着核心作用。然而，许多基准很快变得饱和，即它们无法区分最佳模型，从而削弱了其长期价值。本研究分析了来自主要模型开发商技术报告中的60个大规模语言模型（LLM）基准，探讨基准饱和的原因。
+### Innovation
+研究通过在14个任务设计、数据构建和评估格式方面的基准特性上对五个假设进行测试，揭示了哪些设计选择可以延长基准的寿命，并指出专家策展的基准比众包的基准更能抵抗饱和。此研究提供了更持久的评估策略。
+### Conclusion
+研究发现接近一半的基准表现出饱和，且饱和率随基准老化而增加。隐藏测试数据对防止饱和没有保护作用，而专家策源的基准比众包的更能抵御饱和。研究强调了哪些设计选择能够延长基准寿命，并为进一步优化基准提出建议。
+## 7. `cs.AI` - 基于检索增强（知识图谱）和大规模语言模型的复杂物理信息系统的设计结构矩阵（DSM）生成 [PDF](https://arxiv.org/pdf/2602.16715), [HTML](https://arxiv.org/abs/2602.16715)
+### Authors
+H. Sinan Bank,Daniel R. Herber
+### Background
+论文探索了大规模语言模型（LLMs）、检索增强生成（RAG）以及基于图的RAG（GraphRAG）在生成设计结构矩阵（DSMs）方面的潜在应用。研究主要集中在两种不同的使用案例上，分别是用于功率螺丝刀的实例和具有已知架构参考的CubeSat。研究评估了这些方法在确定预定义组件之间关系和识别组件及其后续关系方面的能力。
+### Innovation
+论文创新性地结合了LLMs、RAG和基于图的RAG技术来生成DSMs。通过两个具体案例来测试方法的性能，特别是在自动化DSM生成方面的潜力。此外，研究人员还利用已有的架构知识来进一步提高模型的性能。
+### Conclusion
+尽管设计和计算挑战重重，但研究识别出了自动化DSM生成的机会。所有相关代码均已经公开，以确保研究结果的可复制性，并为领域专家提供进一步反馈的机会。
+## 8. `cs.AI` - NeuDiff Agent：单晶中子晶体学中受管制的AI工作流 [PDF](https://arxiv.org/pdf/2602.16812), [HTML](https://arxiv.org/abs/2602.16812)
+### Authors
+Zhongcan Xiao(1),Leyi Zhang(1 and 2),Guannan Zhang(3),Xiaoping Wang(1) ((1) Neutron Scattering Division, Oak Ridge National Laboratory, Oak Ridge, Tennesse USA, (2) Department of Linguistics, University of Illinois Urbana-Champaign, Urbana, Illinois, USA, (3) Computer Science and Mathematics Division, Oak Ridge National Laboratory, Oak Ridge, Tennessee, USA)
+### Background
+大型设施在处理复杂结构和磁性样品时，数据分析和报告的时间延迟成为科学产出的瓶颈，特别是在需要迭代处理、集成、精炼和验证的情况下。为了提高结果时间和分析效率，引入了 NeuDiff Agent 作为一种在 Spallation Neutron Source 的 TOPAZ 中使用的治理工具化 AI 工作流，该工作流能够将仪器数据产品处理到经过验证的晶体结构和成果水平的 CIF 文件。
+### Innovation
+NeuDiff Agent 采用显式的治理方式，限制工具使用，确保回退验证关卡，并记录完整的证明，以确保可追溯性和发布级别验证要求的满足。评估其性能时，使用固定的提示协议和重复的端到端运行，评估用户和机器时间、干预负担和恢复行为。与手动处理相比，NeuDiff Agent 将墙时间从 435 分钟缩短至 86.5-94.4 分钟（快 4.6-5.0 倍），同时生成符合验证标准的 CIF 文件。
+### Conclusion
+这些结果展示了将代理 AI 部署在设施晶体学中的实用路径，同时保留可追溯性和发面的验证需求。
+## 9. `cs.AI` - AIdentifyAGE 本体在法医牙龄评估中的决策支持 [PDF](https://arxiv.org/pdf/2602.16714), [HTML](https://arxiv.org/abs/2602.16714)
+### Authors
+Renato Marcelo,Ana Rodrigues,Cristiana Palmela Pereira,António Figueiras,Rui Santos,José Rui Figueira,Alexandre P Francisco,Cátia Vaz
+### Background
+法医和司法决策中，年龄评估至关重要，尤其是在涉及无身份证明个人和无陪伴未成年人的案件中，法律规定了获得保护、医疗保健和司法程序的门槛。牙龄评估是评估青少年和年轻成人年龄的一种广为认可的可靠生物方法，但当前实践面临方法论不一致、数据碎片化表示和医疗、法医和司法信息系统之间的低互操作性等挑战。这些限制阻碍了透明度和可重复性，随着基于AI的方法的越来越多的采用这一问题进一步加剧。
+### Innovation
+AIdentifyAGE 本体是一个领域的特定框架，提供了一个标准化且语义上一致的框架，涵盖了手动和基于AI的法医牙龄评估工作流程，使观察、方法、参考数据和报告结果之间的痕迹链接成为可能。它描绘了完整的医疗法律工作流程，整合了司法背景、个体级信息、法医检查数据、牙龄发育评估方法、放射成像、统计参考研究以及基于AI的估算方法。它在与领域专家共同开发中建立，并基于已有的生物医学、牙科和机器学习本体，确保互操作性、可扩展性和符合FAIR原则。
+### Conclusion
+AIdentifyAGE 本体是促进一致性、透明性和解释性的关键一步，为法医学和司法环境中的本体驱动的决策支持系统奠定了坚实的基础。
+## 10. `cs.AI` - TimeOmni-VL: 统一的时序理解和生成模型 [PDF](https://arxiv.org/pdf/2602.17149), [HTML](https://arxiv.org/abs/2602.17149)
+### Authors
+Tong Guan,Sheng Pan,Johan Barthelemy,Zhao Li,Yujun Cai,Cesare Alippi,Ming Jin,Shirui Pan
+### Background
+现有的时序建模面临着生成和语义理解之间的尖锐分裂。生成模型常依赖于表面模式匹配，而注重理解的模型则难以产生高保真度的数值输出。尽管统一多模态模型（UMMs）在视觉领域已经弥合了这一差距，但在时序数据上仍有待探索。
+### Innovation
+TimeOmni-VL 提出了两个关键创新：1. 保真双向映射 (Bi-TSI)：增强了时序到图像 (TS2I) 和图像到时序 (I2TS) 的转换，确保近乎无损的转换。2. 理解导向的生成：引入了 TSUMM-Suite 数据集，这一数据集包含六个根植于时序分析的理解任务和两个生成任务，使用校准的 Chain-of-Thought，将时序理解作为生成过程中的明确控制信号，以实现高保真度生成。
+### Conclusion
+实验结果表明，这一统一方法显著提高了语义理解和数值精度，为多模态时序建模开辟了新的前沿。
+## 11. `cs.AI` - 持续不确定性的学习 [PDF](https://arxiv.org/pdf/2602.17174), [HTML](https://arxiv.org/abs/2602.17174)
+### Authors
+Heisei Yonezawa,Ansei Yonezawa,Itsuro Kajiwara
+### Background
+机械系统中存在多种不确定性时，如何实现鲁棒控制是一个基本挑战，尤其是当非线性动力学和操作条件变化相互交织时。虽然深度强化学习(DRL)结合域随机化对缩小仿真到现实的差距表现出潜力，但是同时处理所有不确定性往往会导致性能不佳和学习效率低下。
+### Innovation
+提出了一个基于持续学习的新课程学习框架，该框架用于具有多个同时叠加的不确定性因素的非线性动力学系统的鲁棒控制问题。关键思路是将复杂控制问题分解为一系列持续学习任务，按顺序学习处理每个不确定性。通过逐步扩展和多样化动态不确定性，将原始系统扩展成一组植物，控制器在整个植物集中稳定更新，避免灾难性遗忘。在学习过程中引入模型基于控制器(MBC)，以确保在整个植物集中共享基线性能，加速收敛。该方法通过任务特定的DRL代理优化实现样本高效。
+### Conclusion
+该研究将所提出的方法应用于汽车动力传动系统的主动减振控制器设计，验证了控制器对结构非线性和动态变化具有鲁棒性，并成功实现了仿真到现实的转移。
+## 12. `cs.AI` - 通用精细晶格对称性推断与实施以实现严格的晶体结构预测 [PDF](https://arxiv.org/pdf/2602.17176), [HTML](https://arxiv.org/abs/2602.17176)
+### Authors
+Shi Yin,Jinming Mu,Xudong Zhu,Lixin He
+### Background
+晶格结构预测（CSP）的目标是从晶体组成预测其三维原子排列，这在材料发现和机制理解中至关重要。现有的深度学习模型常常仅将晶体对称性视为软启发式或依赖于从已知结构检索的空间群和韦科夫标签模板，这限制了物理真实性和发现真正新的材料结构的能力。相比之下，我们的方法利用大规模语言模型来编码化学语义，并直接从组成生成精细的韦科夫模式，从而有效地避免了数据库查找固有的局限性。
+### Innovation
+本方法通过高效的受限优化搜索过程融合领域知识，该过程严格约束位点多重性和原子比之间的代数一致性。通过将这种对称性一致的模板整合到扩散基础结构中，我们的方法将随机生成路径约束到一个物理有效的几何流形。该框架在稳定、独特性和新颖性（SUN）基准测试中实现了最先进的性能，并具有更好的匹配性能，从而建立了一个新的严格的晶体结构空间探索范式。
+### Conclusion
+本框架使高效扩展到以前未探索的材料空间成为可能，无需依赖现有数据库或先验结构知识。
+## 13. `cs.AI` - 线性注意力模型与二次注意力模型中的基于上下文学习：回归任务上的实证研究 [PDF](https://arxiv.org/pdf/2602.17171), [HTML](https://arxiv.org/abs/2602.17171)
+### Authors
+Ayush Goel,Arjun Kohli,Sarvagya Somvanshi
+### Background
+近期研究展示了基于转置的注意力模型和线性注意力模型在诸如线性回归这类简单的函数类上可以实现基于上下文的学习（ICL）。本研究旨在通过实证方法探究这两种注意力机制在经典的线性回归任务中的差异，包括学习质量（均方误差MSE）、收敛性以及泛化行为，并分析增加模型深度对ICL表现的影响。
+### Innovation
+通过比较线性注意力模型和二次注意力模型在基于上下文学习中的表现，该研究填补了注意力机制在这类任务上的研究空白，提供了有关不同模型在ICL中的表现差异见解，并探讨了模型深度如何影响ICL效果。
+### Conclusion
+研究结果表明，虽然线性注意力模型与二次注意力模型在某些方面存在共通性，但也展示了其在ICL表现上的局限性。增加模型深度可以在一定程度上改善ICL性能，为理解注意力机制在具体任务上的表现提供了实证依据。
+## 14. `cs.AI` - 说服性的机器人：探究对话代理的语言表达个性如何影响用户感知和决策 [PDF](https://arxiv.org/pdf/2602.17185), [HTML](https://arxiv.org/abs/2602.17185)
+### Authors
+Uğur Genç,Heng Gu,Chadha Degachi,Evangelos Niforatos,Senthil Chandrasegaran,Himanshu Verma
+### Background
+大型语言模型驱动的对话代理（CAs）越来越能够通过语言展现出精妙的人物性格，但这些性格如何影响用户的认知尚不清楚。本文通过众包研究，探讨CAs表达出的个性如何影响用户在慈善捐赠情境下的感知和决策。
+### Innovation
+本文创新在于通过众包研究，分析了CAs个性的不同语言表达形式如何影响用户的感知和情绪反应，发现虽然总体性格没有影响用户的决策，但特定性格表现如悲观、权威性较低和理性的程度，会对用户的信任感知、能力感知和同理心造成显著影响，进而影响捐款决策。
+### Conclusion
+本文的研究揭示了CAs作为潜在操纵工具的风险，它们能够微妙地影响用户的感知和决策。信任感、能力和情境同理心是预测捐款决策的关键因素。
+## 15. `cs.AI` - VP-VAE: 通过自适应向量扰动重新思考向量量化 [PDF](https://arxiv.org/pdf/2602.17133), [HTML](https://arxiv.org/abs/2602.17133)
+### Authors
+Linwei Zhai,Han Ding,Mingzhi Lin,Cui Zhao,Fei Wang,Ge Wang,Wang Zhi,Wei Xi
+### Background
+矢量量化变分自编码器（VQ-VAEs）是现代生成建模的基础，然而，它们通常会因为表示学习与离散码本优化的内在耦合而面临训练不稳定和“码本崩溃”的问题。
+### Innovation
+本文提出了一种名为VP-VAE（向量扰动VAE）的新型范式，通过消除训练过程中的显式码本，将表示学习和离散化分离。关键在于从神经网络的角度来看，量化主要表现为在潜在空间中注入结构化的扰动。VP-VAE 使用配对一致且尺度自适应的潜在空间扰动来替代非可微量化器，从而实现无码本的稳定训练，并提高模型在推断时对量化误差的鲁棒性。在假设潜在变量近似均匀分布的情况下，进一步推导出FSP（有限尺度扰动），这是一种轻量级的VP-VAE变体，提供了对固定量化器（FSQ风格）的统一理论解释和实际改进。
+### Conclusion
+在图像和音频基准测试中，VP-VAE和FSP在重建保真度方面表现更好，且能够实现更平衡的token使用，同时避免了耦合码本训练的过程中固有的不稳定性。
+## 16. `cs.AI` - 大型语言模型在长代码上下文问题回答中的鲁棒性和推理准确度 [PDF](https://arxiv.org/pdf/2602.17183), [HTML](https://arxiv.org/abs/2602.17183)
+### Authors
+Kishan Maharaj,Nandakishore Menon,Ashita Saxena,Srikanth Tamilselvam
+### Background
+大型语言模型（LLMs）越来越多地辅助需要长代码上下文推理的软件工程任务，但它们在不同输入条件下的鲁棒性尚不清楚。本文系统研究了长代码上下文问题回答，通过受控消融测试对答案格式、干扰项和上下文规模的敏感性。
+### Innovation
+扩大LongCodeBench Python数据集，添加新的COBOL和Java问题-答案集；在三种设置下评估最先进的模型：(i) 打乱的多项选择项，(ii) 开放性问题，(iii) 包含相关和恶意无关信息的稻草堆中寻找针。
+### Conclusion
+结果表明，在打乱的多项选择项和开放性问题中表现大幅下降，尤其是在面临无关提示时表现出脆弱行为。研究强调了当前长代码上下文评估的局限性，并提供了更广泛的基准，用于评估代码推理在既有系统和现代系统中的准确度。
+## 17. `cs.AI` - TIFO: 频率不变的时间操作符在时间序列中实现站定性意识的表示学习 [PDF](https://arxiv.org/pdf/2602.17122), [HTML](https://arxiv.org/abs/2602.17122)
+### Authors
+Xihao Piao,Zheng Chen,Lingwei Zhu,Yushun Dong,Yasuko Matsubara,Yasushi Sakurai
+### Background
+非平稳时间序列预测受到训练数据和测试数据不同分布的影响，存在分布偏移的问题。现有方法试图通过去除每个样本的低阶矩来缓解依赖性，但这些方法未能捕捉样本间的时间演变结构，也不建模复杂的时间结构。
+### Innovation
+提出了一个时间不变频率操作符（TIFO），它在整个数据集上学习关于频率谱的站定性感知权重。TIFO 通过突出站定的频率分量并抑制非站定分量，缓解时间序列中的分布偏移问题。此外，TIFO 是插即用的方法，可以无缝集成到各种预测模型中。
+### Conclusion
+实验证明，TIFO 在 28 种预测设置中有 18 个 top-1 和 6 个 top-2 的结果，并在 ETTm2 数据集上将平均均方误差降低了 33.3% 和 55.3%，同时将计算成本降低了 60% - 70%，展示了其在各种预测模型中的强大扩展性。
+## 18. `cs.AI` - 使用深度强化学习进行最优投资组合分配：与均值方差优化的对比研究 [PDF](https://arxiv.org/pdf/2602.17098), [HTML](https://arxiv.org/abs/2602.17098)
+### Authors
+Srijan Sood,Kassiani Papasotiriou,Marius Vaiciulis,Tucker Balch
+### Background
+投资组合管理是通过管理一组投资，以实现预先设定的投资目标的过程。投资组合优化是其中的关键步骤，涉及通过资产分配最大限度地提高回报的同时最小化风险。最近，深度强化学习（DRL）在优化投资组合分配方面表现出了有希望的结果。然而，许多方法在其结果的比较中忽略了与传统方法的对比，尤其是金融专业人士在实际环境中的传统方法，如均值方差优化（MVO），该方法通过历史时间序列信息估计预期资产回报和协方差，从而优化投资目标。
+### Innovation
+本研究旨在全面比较模型自由的DRL和MVO在最优投资组合分配中的表现。研究详细说明了如何在实践中使用DRL进行投资组合优化，也强调了在MVO中需要的调整。实验结果表明，DRL代理在多个指标上表现出强大的性能，包括夏普比率、最大回撤和绝对回报。
+### Conclusion
+研究结果表明，在多种评估指标中，DRL方法在最优投资组合分配方面表现优异，特别是在夏普比率、最大回撤和绝对回报等方面。
+## 19. `cs.AI` - 多模态高斯点积的3D场景渲染 [PDF](https://arxiv.org/pdf/2602.17124), [HTML](https://arxiv.org/abs/2602.17124)
+### Authors
+Chi-Shiang Gau,Konstantinos D. Polyzos,Athanasios Bacharis,Saketh Madhuvarasu,Tara Javidi
+### Background
+3D场景重建和渲染是计算机视觉的核心任务，应用于工业监控、机器人和自动驾驶等领域。最近，基于3D高斯点积及其变种的进展在保持高计算和内存效率的同时实现了令人印象深刻的渲染保真度。然而，传统的基于视觉的高斯点积.pipeline通常依赖足够的相机视角来初始化高斯原型并训练其参数，在初始化时通常需要额外的处理成本，尤其是在视觉线索不可靠的条件下，如恶劣天气、低光照或部分遮挡。
+### Innovation
+本文提出了一种结合射频（RF）感知（如汽车雷达）与基于高斯点积的渲染的多模态框架，作为视觉高斯点积渲染的更高效和鲁棒的替代方案。该方法仅通过稀疏RF深度测量高效预测深度，从而为各种高斯函数架构初始化高质量的3D点云。数值测试表明，在基于RF的信息结构准确性的GS管道中适时地纳入RF感知具有显著优势，实现了高质量的3D场景渲染。
+### Conclusion
+本研究通过将射频感知与高斯点积渲染结合，提出了一种用于3D场景渲染的多模态框架，能够实现高保真度的3D场景渲染，尤其是在视觉线索不可靠的情况下，提高了渲染的鲁棒性和效率。
