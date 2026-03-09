@@ -1,0 +1,183 @@
+# 20260309
+[![Subscribe_Visitors](https://visitor-badge.laobi.icu/badge?page_id=nituchao.latest_arxiv_analyze_ai_rss)](https://github.com/nituchao/latest_arxiv_analyze_ai)
+
+## 1. `cs.AI` - 通过多智能体系统发现数学概念 [PDF](https://arxiv.org/pdf/2603.04528), [HTML](https://arxiv.org/abs/2603.04528)
+### Authors
+Daattavya Aggarwal,Oisin Kim,Carl Henrik Ek,Challenger Mishra
+### Background
+数学概念的形成受到实验、证明尝试和反例等多个过程的相互作用的影响。基于这一观察，本文提出了一种新的多智能体模型，用于基于计算进行数学发现。该系统利用反馈和不断演变的数据分布进行决策并提出自己的猜想。
+### Innovation
+该系统具有自主提出假设并尝试证明的能力，这在研究中是前所未有的。这种系统通过历史上的Euler猜想和文献中的开放挑战作为动力，以从立体图形数据和线性代数知识中自主发现同调概念为目标进行基准测试。实验结果表明，优化合适局部过程的组合可以生成高度一致的数学兴趣概念。
+### Conclusion
+通过多智能体系统的实验，统计分析支持我们的主要观点，即优化局部过程的最佳组合可以产生高度一致的数学兴趣概念。
+## 2. `cs.AI` - ECG-MoE：Mixture-of-Expert心电图基础模型 [PDF](https://arxiv.org/pdf/2603.04589), [HTML](https://arxiv.org/abs/2603.04589)
+### Authors
+Yuhao Xu,Xiaoda Wang,Yi Wu,Wei Jin,Xiao Hu,Carl Yang
+### Background
+心电图（ECG）分析对于心脏诊断至关重要，但现有的基础模型往往难以捕捉到不同临床任务所需的周期性和多样性特征。因此，需要一种能够有效融合这些特征的方法。
+### Innovation
+本文提出了一种混合架构ECG-MoE，它结合了多模型的时间特征和心脏周期感知专家模块。通过使用双重路径混合专家模型分别对节律和形态进行建模，并结合低秩自适应调优（LoRA）进行高效推理，从而显著提高了性能。
+### Conclusion
+在五个公开的临床任务上评估，ECG-MoE 达到了最先进的性能，并且相较于多任务基线更快地实现了40%的推理速度。
+## 3. `cs.AI` - SkillNet: 创建、评估和连接人工智能技能 [PDF](https://arxiv.org/pdf/2603.04448), [HTML](https://arxiv.org/abs/2603.04448)
+### Authors
+Yuan Liang,Ruobin Zhong,Haoming Xu,Chen Jiang,Yi Zhong,Runnan Fang,Jia-Chen Gu,Shumin Deng,Yunzhi Yao,Mengru Wang,Shuofei Qiao,Xin Xu,Tongtong Wu,Kun Wang,Yang Liu,Zhen Bi,Jungang Lou,Yuchen Eleanor Jiang,Hangcheng Zhu,Gang Yu,Haiwen Hong,Longtao Huang,Hui Xue,Chenxi Wang,Yijun Wang,Zifei Shan,Xi Chen,Zhaopeng Tu,Feiyu Xiong,Xin Xie,Peng Zhang,Zhengke Gui,Lei Liang,Jun Zhou,Chiyu Wu,Jin Shang,Yu Gong,Junyu Lin,Changliang Xu,Hongjie Deng,Wen Zhang,Keyan Ding,Qiang Zhang,Fei Huang,Ningyu Zhang,Jeff Z. Pan,Guilin Qi,Haofen Wang,Huajun Chen
+### Background
+当前的AI代理能够灵活地调用工具并执行复杂任务，但长期发展受限于缺乏系统性的技能积累和转移机制。没有统一的机制来巩固技能，代理经常“重温旧事”，孤立地重新发现解决方案，不利用先前的策略。
+### Innovation
+SkillNet是一个开放基础设施，设计用于大规模创建、评估和组织AI技能。它将技能统一在一个本体论结构中，支持从异构来源创建技能、建立丰富的关系连接，并进行跨安全、完整、可执行性、可维护性和成本意识的多维度评估。该基础设施整合了超过20万个技能的仓库、一个交互式平台和一个多功能的Python工具包。
+### Conclusion
+实验评估表明，SkillNet显著提升了代理性能，平均奖励提高了40%，减少了30%的执行步骤，涉及多个基础模型。通过将技能形式化为进化的、可组合的资产，SkillNet为代理从短暂经验到持久精通提供了坚实的基础。
+## 4. `cs.AI` - 使用视觉+语言模型预测项目难度 [PDF](https://arxiv.org/pdf/2603.04670), [HTML](https://arxiv.org/abs/2603.04670)
+### Authors
+Samin Khan
+### Background
+本文探讨了大型语言模型（LLMs）在确定数据可视化素养测试项目难度方面的能力。研究评估了从项目文本（问题和答案选项）、可视化图像或两者的组合中提取的特征，用来预测成人对数据可视化测试项目难度的预测准确性。
+### Innovation
+研究采用了包含视觉和文本特征的多模态方法，使用GPT-4.1-nano分析项目并基于不同的特征集生成预测。这种多模态方法在均绝对误差（MAE）方面表现最好（0.224），优于仅基于视觉（0.282）或仅基于文本（0.338）的单模态方法。并且，在外部验证的测试集中表现最佳的多模态模型取得了均方误差0.10805的最佳结果。
+### Conclusion
+研究结果表明，LLMs有潜力用于心理测量分析和自动化项目开发。多模态模型在预测项目难度方面具有显著优势。
+## 5. `cs.AI` - 自我归因偏差：当AI监控自我放水时 [PDF](https://arxiv.org/pdf/2603.04582), [HTML](https://arxiv.org/abs/2603.04582)
+### Authors
+Dipika Khullar,Jack Hopkins,Rowan Wang,Fabien Roger
+### Background
+随着代理系统越来越多地依赖语言模型来监控自身的行为，例如编程代理可能会自我评估生成的代码以供代码审查批准，或者评估工具使用行为的安全性。然而，如果先前由代理生成的动作在代理自己的响应中被呈现，而不是由用户提出，则这种设计模式可能会失败。
+### Innovation
+研究确定了自我归因偏差，即模型倾向于在行为被隐式框架为自身行为时，评估行为更正确或风险更低的趋势，相较于将同一批行为以不同背景评价的情况。在四个编程和工具使用数据集中，研究团队发现，如果评估行为在代理之前的响应中生成，则监控系统往往会更加忽略高风险或低正确性行为。相反，明确声明行为来自监控系统本身并不会导致自我归因偏差。
+### Conclusion
+由于监控系统常被固定示例而不是自身的生成行为进行评估，这种评估可能导致监控系统在部署时被误认为比实际更可靠，这会让开发者在不知情的情况下使用不全面的监控系统。
+## 6. `cs.AI` - 朝向自动化数据分析：基于LLM的指导框架风险估计 [PDF](https://arxiv.org/pdf/2603.04631), [HTML](https://arxiv.org/abs/2603.04631)
+### Authors
+Panteleimon Rodis
+### Background
+大型语言模型（LLMs）越来越多地被整合到关键决策流程中，这增加了对稳健且自动化的数据分析的需求。当前的自助数据集风险分析方法主要依赖于手动审核，涉及耗时且复杂的任务。而基于人工智能（AI）的完全自动化分析则面临幻觉和AI对齐问题。
+### Innovation
+本文提出了一种在人类指导下和监督下结合生成型AI的数据集风险估计框架，旨在为未来的自动化风险分析奠定基础。该方法利用LLMs识别数据库模式的语义和结构属性，提出聚类方法，生成代码并解释产生的结果。人类监督者指导模型进行所需分析，确保过程完整性和与任务目标的一致性。
+### Conclusion
+本文展示了一个概念证明，展示了该框架在风险评估任务中产生有意义结果的可行性。
+## 7. `cs.AI` - 能力阈值与制造拓扑学：实体人工智能如何触发经济地理学相变 [PDF](https://arxiv.org/pdf/2603.04457), [HTML](https://arxiv.org/abs/2603.04457)
+### Authors
+Xinmin Fang,Lingfeng Tao,Zhengxiong Li
+### Background
+从亨利·福特1913年的移动装配线以来，制造的基本拓扑结构尚未经历范式级别的变革。自从丰田生产系统到工业4.0，所有重大创新都在福特范式内优化，但没有改变其结构逻辑：集中的大型工厂，靠近劳动力市场，大规模生产。文章指出，实体智能有潜力打破这一百年的僵局，不仅仅是使现有工厂更高效，而是触发制造业经济地理的根本转变。
+### Innovation
+文章通过定义能力空间C=(d, g, r, t)，展示了当能力向量跨越关键表面时，选址目标函数在拓扑上重新组织；讨论了实体智能通过三条路径（权重倒置、批量压缩、人力基础解耦）实现需求接近的微制造、消除制造业沙漠并逆转通过劳动力套利驱动的地理集中，最终确立实体人工智能经济学，研究实体智能能力阈值如何重新塑造生产和空间逻辑。
+### Conclusion
+实体智能虽然一开始不会直接提高现有工厂的效率，而是通过触发生产能力在地理上的根本变革来推动制造业经济的结构性重组，从而重新定位工厂的位置、供应链的组织和生产规模的构成。最佳工厂站点将由机器最优条件（低湿度、高光照、热稳定性）决定，这些条件与传统的选址逻辑正交，从而创造前所未有的生产地理格局。
+## 8. `cs.AI` - 当代理人说服：LLM 中的宣传生成与缓解 [PDF](https://arxiv.org/pdf/2603.04636), [HTML](https://arxiv.org/abs/2603.04636)
+### Authors
+Julia Jose,Ritik Roongta,Rachel Greenstadt
+### Background
+尽管基于大语言模型（LLM）的代理在开放环境中具有广泛的好处，但它们也可能被利用来生成操控性内容。这项研究探讨了当LLM被赋予宣传目标时，它们如何生成宣传内容，以及采用几种缓解措施（如监督微调、直接偏好优化和ORPO）的可能性。
+### Innovation
+本文创新地将两种特定领域的模型应用于分析LLM生成的宣传文本：一种用于识别宣传文本，另一种用于检测宣传中使用的修辞技巧。此外，研究还探索了通过监督微调(SFT)、直接偏好优化(DPO)和ORPO等方法来减轻LLM生成宣传内容的问题。
+### Conclusion
+我们的研究结果表明，当以特定方式提示时，LLM确实会表现出宣传行为并使用各种修辞技巧。我们发现，这些方法中监督微调显著减少了其生成此类内容的倾向，ORPO的效果最为明显。
+## 9. `cs.AI` - Adaptive Memory Admission Control for LLM Agents [PDF](https://arxiv.org/pdf/2603.04549), [HTML](https://arxiv.org/abs/2603.04549)
+### Authors
+Guilin Zhang,Wei Jiang,Xiejiashan Wang,Aisha Behr,Kai Zhao,Jeffrey Friedman,Xu Chu,Amine Anoun
+### Background
+当前的LLM基础代理越来越依赖长期记忆来支持多会话推理和交互。然而，现有系统缺乏对保留信息的控制。实践中，代理要么累积大量的对话内容，包括虚构或过时的事实，要么依赖于不透明且完全由LLM驱动的记忆策略，这些策略成本高且难以审计。因此，记忆准入仍然是代理架构中不明确和控制薄弱的组成部分。
+### Innovation
+我们提出了自适应记忆准入控制（A-MAC），这是一种将记忆准入视为结构化决策问题的框架。A-MAC将记忆价值分解为五个互补且可解释的因素：未来效用、事实信心、语义新颖性、时间相关性和内容类型先验。该框架结合了轻量级的基于规则的特征提取和单一的LLM辅助效用评估，并通过交叉验证优化学习领域适应的准入策略。这种设计能够实现透明且高效的长期记忆控制。
+### Conclusion
+实验结果表明，A-MAC在精确召回折中方面表现更优，F1值达到0.583，同时将延迟降低了31%，相较于最先进的LLM本地记忆系统。消融结果表明，内容类型先验是最影响可靠记忆准入的关键因素。这些发现证明了显式的可解释准入控制是为基于LLM的代理扩展且可靠的记忆设计的重要原则。
+## 10. `cs.AI` - 渐进的精炼调节：加速扩散语言模型解码 [PDF](https://arxiv.org/pdf/2603.04514), [HTML](https://arxiv.org/abs/2603.04514)
+### Authors
+Lipeng Wan,Jianhui Gu,Junjie Ma,Jianguo Huang,Shiguang Sun,Siyuan Li,Xuguang Lan
+### Background
+扩散语言模型通过统一应用所有标记的去噪规则进行迭代的去噪生成文本。然而，在实际应用中，标记会以不同的速度稳定下来，导致大量的冗余精炼，这也促使在去噪过程中需要控制精炼过程。现有方法通常通过固定的解码过程中的即时信号来评估是否需要进行精炼。相反，标记是否已收敛应依赖于其未来精炼轨迹上的预测变化。改变精炼规则会重塑未来精炼轨迹，从而确定如何制定精炼规则，使得精炼控制本质上是动态的。
+### Innovation
+我们提出了一种渐进式轨迹导向的精炼控制框架——渐进的精炼调节（PRR），该框架基于完整的解码滚出，从标记层面推导出一个经验上的收敛进度概念。根据这个信号，PRR学习了一个基于温度调控分布塑造的轻量级标记法则控制器来调节精炼。实验表明，PRR可以显著加速扩散语言模型的解码过程，同时保持生成质量。
+### Conclusion
+该研究提出了一个名为PRR的框架，通过跟踪所有标记的未来精炼轨迹来衡量精炼的必要性，并基于此信号，采用温度调控来塑流动态调整精炼过程，从而加速了扩散语言模型的解码速度，同时保持生成的质量。
+## 11. `cs.CV` - 使用优先信息的强化学习多旋翼导航 [PDF](https://arxiv.org/pdf/2509.08177), [HTML](https://arxiv.org/abs/2509.08177)
+### Authors
+Jonathan Lee,Abhishek Rathod,Kshitij Goel,John Stecklein,Wennie Tabib
+### Background
+先前基于学习的方法在具有狭窄障碍物的场景中表现出色，但在目标位置被大型墙壁或地形挡住时则表现不佳。本文提出的方法利用到达时间（ToA）图作为优先信息，并使用航向对齐损失来引导机器人绕过大型障碍物。
+### Innovation
+利用高效可微分仿真、新颖的损失函数以及优先信息（如到达时间图），提出了一种基于强化学习的多旋翼导航方法，通过航向对齐损失来引导机器人绕过大型障碍物。
+### Conclusion
+该方法在包含大型障碍物、尖角和死胡同的逼真模拟环境中进行评估，成功率达到86%，比基线策略高出34%。在白天和夜晚的户外复杂环境中的自定义多旋翼装备上测试了该策略，在20次飞行中覆盖了589米，最高速度可达4 m/s，且未发生碰撞。
+## 12. `cs.CV` - 革新混合精度量化：通过大型语言模型实现无训练自动代理发现 [PDF](https://arxiv.org/pdf/2512.07419), [HTML](https://arxiv.org/abs/2512.07419)
+### Authors
+Haidong Kang,Jun Du,Lihong Lin
+### Background
+混合精度量化（MPQ）使深度神经网络（DNNs）摆脱了内存不足（OOM）的瓶颈，吸引了越来越多的研究关注。然而，传统的MPQ方法要么依赖于昂贵的可微优化搜索，效率低下且不灵活，要么由人类专家手动设计的代理（如HAWQ）学习量化DNN，这需要大量的专家知识和劳动密集型工作。
+### Innovation
+本文提出了一种新的由大型语言模型（LLM）驱动的无训练自动代理发现框架（称为TAP）。该框架利用LLM和进化搜索策略自动找到最适合MPQ的定制化TAP，同时引入了一种轻量级的直接偏好优化（DPO）基于策略控制器，该控制器可以根据适应度信号动态调整三个提示模板的选择概率，无需微调LLM，从而形成一个任务感知的反馈循环，提高代理生成的跨代质量。
+### Conclusion
+广泛的实验证明，TAP在主流基准上达到了最先进的性能。我们相信，我们的TAP将显著推进MPQ社区的发展，提供了一种基于LLM驱动设计算法的新视角。
+## 13. `cs.CV` - BridgeDrive：自主驾驶中闭环轨迹规划的扩散桥策略 [PDF](https://arxiv.org/pdf/2509.23589), [HTML](https://arxiv.org/abs/2509.23589)
+### Authors
+Shu Liu,Wenlin Chen,Weihao Li,Zheng Wang,Lijin Yang,Jianing Huang,Yipin Zhang,Zhongzhan Huang,Ze Cheng,Hao Yang
+### Background
+基于扩散的规划器在自主驾驶中表现出强大的潜力，能够捕捉到多模式的驾驶行为。然而，如何在闭环设置中有效引导这些模型以实现安全且反应灵敏的规划成为一个关键挑战。因为自主车辆的行为会直接影响未来的状态，这使得在规划过程中处理不确定性变得至关重要。现有的方法利用典型的专家驾驶行为（即锚点）来引导扩散规划器，但这种方法依赖于截断的扩散时间表，这引入了正向过程与去噪过程之间的不对称性，与扩散模型的核心原理背道而驰。
+### Innovation
+本文介绍了BridgeDrive，一种新型的锚点引导扩散桥策略，用于闭环轨迹规划。BridgeDrive通过直接将粗略的锚点轨迹转化为精细、具备上下文感知性的计划来解决挑战，确保了正向与逆向过程之间的一致性。此外，BridgeDrive与高效的ODE求解器兼容，可以实现实时部署。
+### Conclusion
+BridgeDrive在Bench2Drive闭环评估基准测试中达到了最先进的性能，与PDM-Lite和LEAD数据集相比，分别提高了7.72%和2.45%的成功率。该政策页面可访问：this https URL
+## 14. `cs.CV` - 重新审视多模态KV缓存压缩：基于频域的离群KV意识方法 [PDF](https://arxiv.org/pdf/2511.16786), [HTML](https://arxiv.org/abs/2511.16786)
+### Authors
+Yaoxin Yang,Peng Ye,Xudong Tan,Chongjun Tu,Maosen Zhao,Jia Hao,Tao Chen
+### Background
+多模态大型语言模型在进行推理时会遇到实质性的延迟，因为多模态KV缓存的大小与视觉输入的长度成正比增长。现有的方法主要依赖于注意力得分来减少缓存大小，这使得它们无法与高效的注意力内核（例如FlashAttention）兼容，并且忽视了值向量对注意力输出的贡献。
+### Innovation
+本文作者从KV矩阵分布的角度重新审视了多模态KV缓存压缩。首先，他们观察到多模态KV矩阵在频域中的能量主要集中在低频段，并通过低通滤波提取了这一主要能量。进一步发现，去除显著偏离这一主要能量的KV对会导致性能显著下降，作者将其定义为离群KV。考虑到这些离群KV可能包含对于推理至关重要的特征，作者提出了FlashCache，这是一种基于频域指导、意识离群KV的KV缓存压缩框架，同时引入了离群KV识别模块和动态预算分配模块。
+### Conclusion
+实验结果显示FlashCache在多个MLLM和基准测试中表现更优，能够在降低80％KV内存使用的同时，达到比现有最先进的多模态KV压缩方法快1.69倍的解码速度，同时保持任务性能。
+## 15. `cs.CV` - 透过不确定性看见：利用自由能原理进行实时知觉适应的稳健视觉导航 [PDF](https://arxiv.org/pdf/2403.01977), [HTML](https://arxiv.org/abs/2403.01977)
+### Authors
+Maytus Piriyajitakonkij,Rishabh Dev Yadav,Mingfei Sun,Mengmi Zhang,Wei Pan
+### Background
+自然界中的导航是适应性推理的成就，生物体能够保持目标导向行为，尽管面临着嘈杂和不完整的感官输入。自由能原理（FEP）是这一能力的核心，它认为感知是一个生成过程，大脑通过最小化变分自由能（VFE）来维持世界内部模型的准确性。尽管深层神经网络（DNNs）成为了生物大脑的有效类比，但它们通常缺乏处理突然感官变化所需的实时塑性。
+### Innovation
+提出了基于FEP的导航框架FEP-Nav，这是一种生物启发的框架，实现了实时感知适应以进行稳健的视觉导航。通过分解VFE为预测误差和贝叶斯惊讶两个组成部分，设计了双机制架构：Top-down解码器提供对未受损的感官输入的内部期望，自适应归一化动态调整移位特征分布与先验信念的对齐。理论证明，这种重建和归一化的结合提供了一种在推理过程中无需基于梯度更新即可最小化VFE的正式机制。实验结果显示FEP-Nav在模拟和真实世界视觉损坏下的导航性能恢复显著，超过了非适应性基线和强大适应性方法。
+### Conclusion
+将机器学习与大脑的变分原则相连接，提供了一种稳健的自主行为策略，使机器人在通常降低标准适应模型性能的感官条件下仍能保持功能性。
+## 16. `cs.CV` - 基于图的多模态轻量化网络实现自适应脑肿瘤分割 [PDF](https://arxiv.org/pdf/2507.09995), [HTML](https://arxiv.org/abs/2507.09995)
+### Authors
+Guohao Huo,Ruiting Dai,Zitong Wang,Junxin Kong,Hao Tang
+### Background
+多模态脑肿瘤分割由于主流模型的高计算成本而在实际部署中极具挑战性。
+### Innovation
+本文提出了GMLN-BTS（Graph-based Multi-modal interaction Lightweight Network for脑肿瘤分割），通过模态感知自适应编码器（M2AE）、基于图的多模态协作交互模块（G2MCIM）和体素细化上采样模块（VRUM）三大关键组件实现高效精准且资源节约的分割。
+### Conclusion
+在BraTS 2017、2019和2021基准测试中，GMLN-BTS实现了轻量化模型中的最佳性能。相比主流3D变换器的参数数减少了98%，且显著超越现有的紧凑型方法。
+## 17. `cs.CV` - DAP: 基于离散标记自回归规划的自动驾驶 [PDF](https://arxiv.org/pdf/2511.13306), [HTML](https://arxiv.org/abs/2511.13306)
+### Authors
+Bowen Ye,Bin Zhang,Hang Zhao
+### Background
+在自动驾驶中，通过增加数据和模型预算来实现持续性能提升仍是一个关键但未解决的挑战。尽管自回归模型在规划任务中显示了数据扩展效率的潜力，只预测自身的轨迹路径较少受到监督，而且对场景演变如何塑造自身运动缺乏限制性。
+### Innovation
+我们引入了DAP（基于离散标记自回归规划），这种模型可以联合预测BEV（鸟瞰图）语义和自身轨迹，从而强化全面的表示学习，并使预测动力学直接条件自身运动。此外，采用基于强化学习的微调方法，既能保持监督行为克隆的先验知识，又能注入基于奖励的改进。
+### Conclusion
+尽管模型参数量仅为1.6亿，但DAP在开环指标上仍取得最先进的性能，并在NAVSIM基准上提供了竞争力的闭环结果。总之，基于完全离散标记自回归的格式可以在栅格化的BEV和自身动作上提供一种紧凑且可扩展的规划范例，适用于自动驾驶。
+## 18. `cs.CV` - HSG-12M: 从非厄米晶体能量谱中生成大量空间多图的标准 [PDF](https://arxiv.org/pdf/2506.08618), [HTML](https://arxiv.org/abs/2506.08618)
+### Authors
+Xianquan Yan,Hakan Akgün,Kenji Kawaguchi,N. Duane Loh,Ching Hua Lee
+### Background
+AI正在通过揭示理解复杂物理系统的新型方式来改变科学研究，但其影响受到缺乏大规模的、高质量的领域特定数据集的限制。非厄米量子物理中，晶体的能量谱在复平面上形成复杂的几何形状，称为哈密顿谱图。尽管这些图是电子行为的独特指纹，但它们的系统性研究由于依赖于人工提取而难以实现。
+### Innovation
+作者引入了Poly2Graph：一个高性能、开源管线，用于自动化将1-D晶体哈密顿ians映射到谱图。利用此工具，他们创建了包含11.6万个静态和5.1万个动态哈密顿谱图的HSG-12M数据集，这些谱图跨越了1401个特征多项式类别，源自177TB的谱势数据。HSG-12M是第一个大规模的空间多图数据集，解决了现有图基准普遍假设简单非空间边的问题，从而保留了重要的几何信息。该数据集在流行图神经网络中作为基准，揭示了在大规模学习空间多边时的新挑战。进一步展示了谱图作为多项式、向量和矩阵的通用拓扑指纹，建立了代数到图的新型联系。
+### Conclusion
+HSG-12M为凝聚态物理学中的数据驱动科学发现奠定了基础，并为几何觉察能的图学习等领域带来了新的机会。
+## 19. `cs.CV` - Observer-Actor: 基于稀疏视角高斯摊铺的主动视觉模仿学习 [PDF](https://arxiv.org/pdf/2511.18140), [HTML](https://arxiv.org/abs/2511.18140)
+### Authors
+Yilong Wang,Cheng Qian,Ruomeng Fan,Edward Johns
+### Background
+该研究背景在于现有模仿学习方法在多臂机器人系统中普遍存在视线遮挡问题，导致训练得到的策略稳健性差。本文通过引入新的Observer Actor (ObAct)框架，解决这一问题。
+### Innovation
+该创新点在于提出了Observer Actor (ObAct)框架，该框架让观察者臂根据最优视觉观察动态切换到执行者臂的角色，从三个视角构建3D高斯摊铺表示，探索最优相机姿态，执行者臂再基于观察者的观察执行策略。该方法显著提升了策略执行时的目标物和夹持器的清晰度与可见性，从而更好地适应未完全观测的环境，训练出更 robust 的策略。
+### Conclusion
+实验结果显示，将ObAct方法应用在轨迹转移和行为克隆两种现有的模仿学习方法上时，其性能都有显著提升。在未遮挡情况下轨迹转移提高了145%，带遮挡情况下提高了233%；行为克隆提高了75%和143%。
+## 20. `cs.CV` - MedFuncta:统一的医疗神经场学习框架 [PDF](https://arxiv.org/pdf/2502.14401), [HTML](https://arxiv.org/abs/2502.14401)
+### Authors
+Paul Friedrich,Florentin Bieder,Julian McGinnis,Julia Wolleb,Daniel Rueckert,Philippe C. Cattin
+### Background
+现有的医学成像研究主要集中在离散数据表示上，这些表示不便于随网格分辨率缩放，并且无法捕捉到通常连续的底层信号。神经场（Neural Fields, NFs）提供了一种替代方案，通过将数据建模为连续函数。尽管单实例神经场在医疗应用中取得了成功，但将其扩展到大规模医疗数据集仍是一个开放的挑战。因此，我们引入了MedFuncta，一个统一的框架，用于在多种医疗信号上大规模训练神经场。
+### Innovation
+我们基于Functa方法，编码数据为统一的表示，即一维潜矢量，这个潜矢量可以调节共享的元学习神经场，使得在数据集上具有泛化性能。我们还引入了非常量频率参数ω，与层间学习率建立了联系，这种ω调度策略与近期理论学习动力学有关。此外，我们提出了一种可扩展的共享网络学习策略，在训练中采用稀疏监督，降低了内存消耗和计算开销，同时保持了竞争力。最后，我们在多种医疗数据集上评估了MedFuncta，并展示了该方法如何解决相关的下游任务。
+### Conclusion
+我们最终评估了MedFuncta在多种医疗数据集上的性能，并展示了其在神经数据表示中的应用。为了促进该领域的进一步研究，我们公开了代码、模型权重以及第一个大规模数据集MedNF，该数据集包含超过50万个多实例医疗神经场的潜矢量。
